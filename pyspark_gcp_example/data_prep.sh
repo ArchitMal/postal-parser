@@ -1,5 +1,8 @@
 #!/bin/bash
 # download wget with homebrew
+
+PROJECT_ID=postal-parser
+
 brew install wget
 mkdir temp
 cd temp

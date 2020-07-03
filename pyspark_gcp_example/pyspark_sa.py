@@ -11,9 +11,10 @@ from pyspark.ml.classification import LogisticRegression
 from pyspark.ml import PipelineModel
 
 # grab command line args and store them as variables
-inputdir = sys.argv[1]
-outputfile = sys.argv[2]
-modeldir = sys.argv[3]
+bucket = sys.argv[1]
+inputdir = 'gs://'+bucket+'/pyspark_nlp/data/'
+outputfile = 'gs://'+bucket+'/pyspark_nlp/result'
+modeldir = 'gs://'+bucket+'/pyspark_nlp/model'
 
 # define regular expression for pre-processing
 pat1 = r'@[A-Za-z0-9_]+'

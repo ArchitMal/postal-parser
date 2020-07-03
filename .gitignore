@@ -130,3 +130,14 @@ dmypy.json
 
 # Dumps of Data
 data/
+
+#unversioned files for intelliJ
+.DS_Store
+.idea/.gitignore
+.idea/inspectionProfiles/
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/postal-parser.iml
+.idea/vcs.xml
+pyspark_gcp_example/.DS_Store

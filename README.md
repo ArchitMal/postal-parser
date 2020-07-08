@@ -14,7 +14,7 @@ Probabilistic postal pyspark parser project pod.
 ### CoNLL document
 
 ```
-DOCTYPE 0 0 X
+-DOCSTART- -X- -X- O
 
 Alice NPP NPP B-House
 McAlice NPP NPP I-House
@@ -27,7 +27,7 @@ M4J NPP NPP B-Postcode
 0A7 NPP NPP I-Postcode
 Canada NPP NPP B-Country
 
-DOCTYPE 0 0 X
+-DOCTYPE- -X- -X- O
 
 Bob NPP NPP B-House
 Bobbert NPP NPP I-House

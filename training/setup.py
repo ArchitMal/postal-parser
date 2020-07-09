@@ -101,7 +101,7 @@ def POS_tags(address_dict):
         keys=list(address_dict.keys())
         
         tagged.append(nltk.pos_tag(keys))
-    return tagged
+        return tagged
 
 
 

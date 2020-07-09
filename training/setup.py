@@ -79,32 +79,38 @@ import nltk
 def tokenize(address_str):
     '''Takes the address str and outputs list of ordered tokens in the address'''
     
-    clean_add = address.str.replace(',', "")
+    clean_add = address_str.replace(',', "")
     tokens_list = clean_add.split(' ')
+    
     return tokens_list
 
-def NER_tags(address_dict):
+def NER_tags(address_dict, address_str):
     '''Takes the address dict of form {token:tag} and outputs a dict of form {token:BIO tag}'''
     NER ={}
     for key in address_dict:
+        
         tokens = key.split(" ")
         for i in range(len(tokens)):
             if i == 0:
                 NER[tokens[i]] = 'B-' + address_dict[key]
             else:
                 NER[tokens[i]] = 'I-' + address_dict[key]
+    tokens=tokenize(address_str)
+    for token in tokens:
+        if token not in address_dict.keys():
+            NER[token]='O'
+    
     return NER
 
 ###ADD POS tagging formula here ###
-def POS_tags(address_dict):
+def POS_tags(tokens):
     
         
-        keys=list(address_dict.keys())
         
-        tagged.append(nltk.pos_tag(keys))
-        return tagged
-
-
+        
+        tagged=nltk.pos_tag(tokens)
+        
+        return dict(tagged)
 
 #   Owner: Mona & Saira
 #   description: just writes the output of the above to a file
@@ -116,20 +122,25 @@ def POS_tags(address_dict):
 
 def write_CONLL_file(zipped_lists):
     '''Takes zipped addresses and writes a CoNLL format file '''
-    
-    file = open(OUT_FILE_NAME, "w+")
-    for address in zipped_list:
+    OutDIR = 'CoNLL_addresses.txt'
+    file = open(OutDIR, "w+")
+    for address in zipped_lists:
         add_str, add_dict = address
         tokens = tokenize(add_str)
-        tags = NER_tags(add_dict)
-        pos = POS_tags(add_dict) # change to pos tagging formula here
+        tags = NER_tags(add_dict,add_str)
+        pos = POS_tags(tokens) # change to pos tagging formula here
         i = 0
+        
         file.write('-DOCSTART- -X- -X- O \n')
+        for token in tokens: 
+            print()
         for token in tokens:
-        file.write('{} {} {} {} \n'.format(token, pos[i], pos[i], tags[token]))
+         file.write('{} {} {} {} \n'.format(token, pos[token], pos[token], tags[token]))
     
-        file.write('\n')
+         file.write('\n')
     file.close()
+
+
 
 #Just so you all can see the logic
 

@@ -136,8 +136,8 @@ def write_CONLL_file(zipped_lists):
             print()
         for token in tokens:
          file.write('{} {} {} {} \n'.format(token, pos[token], pos[token], tags[token]))
-    
-         file.write('\n')
+        
+        file.write('\n')
     file.close()
 
 

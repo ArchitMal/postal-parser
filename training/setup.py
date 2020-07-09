@@ -96,7 +96,13 @@ def NER_tags(address_dict):
 
 ###ADD POS tagging formula here ###
 def POS_tags(zipped_lists):
-    pass
+    for item in zipped_lists:
+        
+        keys=list(item[1].keys())
+        
+        tagged.append(nltk.pos_tag(keys))
+    return tagged
+
 
 
 #   Owner: Mona & Saira

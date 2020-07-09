@@ -1,7 +1,7 @@
 
 # Archi & Ian
 FILE_NAME = '../data/sample_of_toronto.csv'
-OUT_FILE_NAME = 'CoNLL_addresses.txt'
+OUT_FILE_NAME = '../data/CoNLL_addresses.txt'
 
 """
 Example of .csv file:

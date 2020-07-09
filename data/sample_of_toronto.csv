@@ -1,0 +1,696 @@
+LON,LAT,NUMBER,STREET,UNIT,CITY,DISTRICT,REGION,POSTCODE,ID,HASH
+-79.5442514,43.593789,22,Lloyd George Ave,,Etobicoke,,,,,4609176c08c67d96
+-79.5434954,43.5934445,3,Lloyd George Ave,,Etobicoke,,,,,8acf99afdb870ad6
+-79.5435775,43.5936221,7A,Lloyd George Ave,,Etobicoke,,,,,239c832319e298e7
+-79.5465666,43.5962026,58,Foch Ave,,Etobicoke,,,,,2bb9aab1d601c207
+-79.5464106,43.5959935,54,Foch Ave,,Etobicoke,,,,,c33e434ceba1c9fb
+-79.5465831,43.5963137,60,Foch Ave,,Etobicoke,,,,,f037b9cfaead8162
+-79.5466609,43.5964019,62,Foch Ave,,Etobicoke,,,,,ada4bddc7aa9ee3b
+-79.546745,43.596511,64,Foch Ave,,Etobicoke,,,,,547bee46b84ee215
+-79.5459748,43.596087,46,Jellicoe Ave,,Etobicoke,,,,,6af7604eb1db7548
+-79.5458423,43.5961515,44,Jellicoe Ave,,Etobicoke,,,,,c51bb7a78d850f1d
+-79.5438691,43.5960691,11,Jellicoe Ave,,Etobicoke,,,,,ca80375dce079fcc
+-79.5437192,43.5961212,9,Jellicoe Ave,,Etobicoke,,,,,c63be8c67b3e70e6
+-79.5435943,43.5961647,7,Jellicoe Ave,,Etobicoke,,,,,efeaa2d489290c8d
+-79.5439076,43.5965289,12,Jellicoe Ave,,Etobicoke,,,,,19a8d784e4c8f371
+-79.544469,43.5968782,17,Owen Dr,,Etobicoke,,,,,5b22be63512ff6ae
+-79.5443476,43.596918,15B,Owen Dr,,Etobicoke,,,,,a1b88e9f9854e306
+-79.5443682,43.596949,15,Owen Dr,,Etobicoke,,,,,68762f794ec4cafe
+-79.5411466,43.5882821,29,Forty First St,,Etobicoke,,,,,250c8178e38c3595
+-79.5410201,43.5865433,2A,Forty Second St,,Etobicoke,,,,,32ba929529b6ec4a
+-79.5408904,43.5870031,7,Forty Second St,,Etobicoke,,,,,a50fc2fd7af9bd78
+-79.5405836,43.5867829,1,Forty Second St,,Etobicoke,,,,,ab1f0d271a26204f
+-79.5401348,43.5865004,417,Lake Promenade,,Etobicoke,,,,,3c586f6deb8d9609
+-79.5400353,43.5866022,411,Lake Promenade,,Etobicoke,,,,,dd2016d2f23becc0
+-79.5405358,43.5869056,404,Lake Promenade,,Etobicoke,,,,,93e3cbb235a8c71d
+-79.5415423,43.5885517,37,Forty First St,,Etobicoke,,,,,e1ac8bfff46b396e
+-79.5414719,43.5885162,37A,Forty First St,,Etobicoke,,,,,8790648b11565316
+-79.5041903,43.6895578,67B,Buttonwood Ave,,York,,,,,281659a36b07e779
+-79.5412217,43.5883303,31,Forty First St,,Etobicoke,,,,,02bdcb22c8fc7ad5
+-79.5406313,43.5906824,81,Fortieth St,,Etobicoke,,,,,0b13d63b564e9b40
+-79.5406566,43.5907742,83,Fortieth St,,Etobicoke,,,,,b6f2451ecf2b8fbb
+-79.5404296,43.5902627,67,James St,,Etobicoke,,,,,c4c6350fa153b7a4
+-79.5400563,43.59033,63,James St,,Etobicoke,,,,,d8e1566bebad9455
+-79.5405334,43.5905792,66,James St,,Etobicoke,,,,,1d94e6f98f723409
+-79.5402146,43.5906865,64,James St,,Etobicoke,,,,,7eddfd03c56ec783
+-79.5394316,43.5896451,38,Thirty Ninth St,,Etobicoke,,,,,fc1a77efaf1f9f4c
+-79.5388698,43.5925023,83,Thirty Eighth St,,Etobicoke,,,,,c3db5028e4ba0017
+-79.5389821,43.5926774,89,Thirty Eighth St,,Etobicoke,,,,,61905ad27b677317
+-79.5388986,43.5926021,87,Thirty Eighth St,,Etobicoke,,,,,ab8c87df6b60cdbc
+-79.539865,43.5928105,3737,Lake Shore Blvd W,,Etobicoke,,,,,352f694c409f6ad1
+-79.5397704,43.5928133,3735,Lake Shore Blvd W,,Etobicoke,,,,,71bfd726a56888fb
+-79.5397318,43.5928217,3733,Lake Shore Blvd W,,Etobicoke,,,,,df3312ff79cf87c5
+-79.534615,43.5888121,9,Thirty Sixth St,,Etobicoke,,,,,0520491ab3244ce5
+-79.534559,43.588693,5,Thirty Sixth St,,Etobicoke,,,,,0da48c7e9bb72b6d
+-79.5353614,43.5893155,306,Lake Promenade,,Etobicoke,,,,,33cacc5361f46a2e
+-79.5349106,43.5894788,21,Thirty Sixth St,,Etobicoke,,,,,aad06aa8f1b46b97
+-79.5346886,43.5889647,11,Thirty Sixth St,,Etobicoke,,,,,75f189d9521e5926
+-79.5347101,43.5891001,15,Thirty Sixth St,,Etobicoke,,,,,deb5378170862f99
+-79.5464754,43.5920704,29,Enfield Ave,,Etobicoke,,,,,5b83b8503d3c66e9
+-79.5478634,43.5922573,45,Enfield Ave,,Etobicoke,,,,,3e498e26e20092aa
+-79.5477294,43.5921656,43,Enfield Ave,,Etobicoke,,,,,8c295544987d4dd9
+-79.5452787,43.5933216,10A,Foch Ave,,Etobicoke,,,,,9720e9929024bd5a
+-79.5450592,43.592754,3,Enfield Ave,,Etobicoke,,,,,565f988bf46ffa8d
+-79.5488633,43.5958634,2,Sunset Ave,,Etobicoke,,,,,a7e949b92b7d4e86
+-79.5486095,43.5958512,1,Sunset Ave,,Etobicoke,,,,,1c10ec19d8198f15
+-79.5483753,43.5952777,67,Jellicoe Ave,,Etobicoke,,,,,b95c8dd97d677ead
+-79.5484317,43.595407,72,Jellicoe Ave,,Etobicoke,,,,,7c4d07c663b2ebdf
+-79.5489132,43.5970158,65,Albright Ave,,Etobicoke,,,,,4edc1cb1075af43c
+-79.5487876,43.5970862,63,Albright Ave,,Etobicoke,,,,,e4605063f2537af5
+-79.5486145,43.597075,61,Albright Ave,,Etobicoke,,,,,d656b68083a91ff4
+-79.5485378,43.597097,59,Albright Ave,,Etobicoke,,,,,f2ed21357716c3c9
+-79.548051,43.5966339,74A,Gort Ave,,Etobicoke,,,,,42e89932894260ca
+-79.5456686,43.5942756,36,Alcan Ave,,Etobicoke,,,,,42201108e0e701a8
+-79.5457831,43.5944616,28,Foch Ave,,Etobicoke,,,,,6e3d85d92348ba2b
+-79.5458264,43.5944966,30,Foch Ave,,Etobicoke,,,,,f2b29fe1bafc9e9c
+-79.5458862,43.5946272,32,Foch Ave,,Etobicoke,,,,,8e63a01e2a8b0967
+-79.5478434,43.5951474,61,Jellicoe Ave,,Etobicoke,,,,,25ae0daa739535b4
+-79.547401,43.5949977,44,Gort Ave,,Etobicoke,,,,,ea833564099a1ce2
+-79.5435049,43.5935617,5,Lloyd George Ave,,Etobicoke,,,,,dec46d7b737bb2e5
+-79.5437013,43.5939431,11,Lloyd George Ave,,Etobicoke,,,,,aab1c6f9bce7683b
+-79.5457022,43.5961915,42,Jellicoe Ave,,Etobicoke,,,,,a054c22e46610619
+-79.546018,43.5963204,61,Foch Ave,,Etobicoke,,,,,4e796c29acac502d
+-79.5459913,43.5964294,63,Foch Ave,,Etobicoke,,,,,67134b0d63657dc6
+-79.5460632,43.5965294,65,Foch Ave,,Etobicoke,,,,,809161565d6cd453
+-79.5466988,43.5965926,66,Foch Ave,,Etobicoke,,,,,30d9512ddf2a956a
+-79.546726,43.5966553,66A,Foch Ave,,Etobicoke,,,,,976499be8176d9f1
+-79.5467502,43.5967302,68,Foch Ave,,Etobicoke,,,,,d5e8d9ad11601703
+-79.544258,43.5969397,15A,Owen Dr,,Etobicoke,,,,,4a6d6867624bc201
+-79.5441121,43.5969383,13,Owen Dr,,Etobicoke,,,,,8b936870cd70d2c6
+-79.5440774,43.5969836,11,Owen Dr,,Etobicoke,,,,,f7bc5e6400f067d2
+-79.5437302,43.5965738,2,Jellicoe Ave,,Etobicoke,,,,,d64952f6dac35b81
+-79.5434821,43.5967035,174,Brown's Line,,Etobicoke,,,,,2ee19d43ce643976
+-79.5439342,43.5969614,9,Owen Dr,,Etobicoke,,,,,ba97ce3516800d29
+-79.5403853,43.5869848,402,Lake Promenade,,Etobicoke,,,,,9aa657faf08d0bc4
+-79.5399218,43.5866595,407,Lake Promenade,,Etobicoke,,,,,73e18322ee939175
+-79.5398029,43.586735,405,Lake Promenade,,Etobicoke,,,,,43d5767c38e765d1
+-79.5397142,43.5868403,403,Lake Promenade,,Etobicoke,,,,,cccc5be8b91efeb4
+-79.5396532,43.5868788,401,Lake Promenade,,Etobicoke,,,,,1b31b4f35b1379b1
+-79.539542,43.5869301,399,Lake Promenade,,Etobicoke,,,,,17c66875ce5f797f
+-79.5414661,43.5888984,23,Garden Pl,,Etobicoke,,,,,00f1285f9b77b66d
+-79.5413179,43.5889176,21,Garden Pl,,Etobicoke,,,,,a44d74f39ac6c911
+-79.5411804,43.5889308,19,Garden Pl,,Etobicoke,,,,,faf8add6bb0767d7
+-79.5421959,43.589005,49,Forty First St,,Etobicoke,,,,,930e2ef113257d82
+-79.5419943,43.589208,32,Garden Pl,,Etobicoke,,,,,f466f22aa0130845
+-79.5395526,43.5898501,44,Thirty Ninth St,,Etobicoke,,,,,a0e03ce44205a8b1
+-79.5395252,43.589756,42,Thirty Ninth St,,Etobicoke,,,,,3ad903b454ba8f04
+-79.5396896,43.5901272,54,Thirty Ninth St,,Etobicoke,,,,,2c78bf223145b79f
+-79.5395823,43.5899548,50,Thirty Ninth St,,Etobicoke,,,,,e4020a8a9c4b913b
+-79.5396792,43.5900461,52,Thirty Ninth St,,Etobicoke,,,,,0426cfcfd468ef2c
+-79.5389118,43.5896307,27,Thirty Ninth St,,Etobicoke,,,,,d0361b93d0815890
+-79.5390293,43.5898811,37,Thirty Ninth St,,Etobicoke,,,,,db1c46d4c8a3942c
+-79.5423694,43.593108,25,Ansell Ave,,Etobicoke,,,,,ad40ed15842b6771
+-79.5396933,43.59283,3731,Lake Shore Blvd W,,Etobicoke,,,,,1dadd4539abe5b09
+-79.539087,43.5929446,3719,Lake Shore Blvd W,,Etobicoke,,,,,ecca348fe1adf66f
+-79.5389087,43.5930109,3711-3717,Lake Shore Blvd W,,Etobicoke,,,,,b52af55b3dc3872c
+-79.538428,43.5885174,364,Lake Promenade,,Etobicoke,,,,,b13738b60cf7af3c
+-79.5385645,43.5889378,5,Thirty Ninth St,,Etobicoke,,,,,d166432cdcd7f92c
+-79.5384827,43.5887253,1,Thirty Ninth St,,Etobicoke,,,,,59a685cd690cc3b5
+-79.5384703,43.5888151,3,Thirty Ninth St,,Etobicoke,,,,,f31a7f4bcfeac25a
+-79.5347504,43.5891396,15A,Thirty Sixth St,,Etobicoke,,,,,5cb9b43933eb0feb
+-79.5348059,43.5892364,17,Thirty Sixth St,,Etobicoke,,,,,f47748e1cbc69b60
+-79.5348502,43.5893692,19,Thirty Sixth St,,Etobicoke,,,,,886adb19ddb75f28
+-79.5362792,43.5897775,15,Thirty Seventh St,,Etobicoke,,,,,20fab2d0f92cd7ab
+-79.5361827,43.5896682,11,Thirty Seventh St,,Etobicoke,,,,,32fdb5164f230df3
+-79.5363745,43.5899317,19,Thirty Seventh St,,Etobicoke,,,,,08aaf5d5a4fdaede
+-79.5363969,43.5900311,21,Thirty Seventh St,,Etobicoke,,,,,64d6eadf8a8a1bd2
+-79.5478604,43.5923834,47,Enfield Ave,,Etobicoke,,,,,a0ae8063f6bfdd91
+-79.5478454,43.5924912,49,Enfield Ave,,Etobicoke,,,,,152df8cdf9b59f97
+-79.547868,43.5925815,51,Enfield Ave,,Etobicoke,,,,,6e4c00a4f79af6a5
+-79.54789,43.5926989,53,Enfield Ave,,Etobicoke,,,,,c8d31a0b59f2f342
+-79.5445731,43.5929362,5,Foch Ave,,Etobicoke,,,,,69bc16cf262a553b
+-79.5446381,43.5930127,7,Foch Ave,,Etobicoke,,,,,b1d24a5375b5b1e8
+-79.5483477,43.5955527,70,Jellicoe Ave,,Etobicoke,,,,,d8a527e1b6395245
+-79.5481098,43.595655,68,Jellicoe Ave,,Etobicoke,,,,,67683d98707b83e7
+-79.5519705,43.5971265,46,Westleigh Cres,,Etobicoke,,,,,a777f44909ca59b6
+-79.5513591,43.5967947,54,Westleigh Cres,,Etobicoke,,,,,591698c558d4cf81
+-79.5480961,43.5967207,76,Gort Ave,,Etobicoke,,,,,472da12d43e39cf5
+-79.5481433,43.596816,76A,Gort Ave,,Etobicoke,,,,,a056dd8004df8ae9
+-79.5483168,43.5970893,84,Gort Ave,,Etobicoke,,,,,82084603a2b650d9
+-79.5481727,43.5969041,76B,Gort Ave,,Etobicoke,,,,,1b2820b371017869
+-79.5482199,43.596998,82,Gort Ave,,Etobicoke,,,,,94007d91340c3d53
+-79.5499618,43.5972002,55,Westleigh Cres,,Etobicoke,,,,,bf9069db03dc5186
+-79.5501723,43.5975802,1,Woodbury Pl,,Etobicoke,,,,,e4ca97e83b0dac01
+-79.5473736,43.5951054,46,Gort Ave,,Etobicoke,,,,,9034344e8fc2f0fb
+-79.547494,43.595251,50,Gort Ave,,Etobicoke,,,,,239235624fc6f3c5
+-79.547394,43.5951983,48,Gort Ave,,Etobicoke,,,,,f6f07655713c01a4
+-79.5471987,43.5946529,38,Gort Ave,,Etobicoke,,,,,308fb8b3cfeca334
+-79.5473189,43.5948075,40,Gort Ave,,Etobicoke,,,,,d9676d4d375f3056
+-79.5473099,43.5949245,42,Gort Ave,,Etobicoke,,,,,aba3a3fabf63d400
+-79.5468183,43.5950173,39,Gort Ave,,Etobicoke,,,,,121dc0dec77a2bd3
+-79.5436025,43.593682,7B,Lloyd George Ave,,Etobicoke,,,,,c9a4e6bffdd8f2e8
+-79.5436601,43.5938068,9,Lloyd George Ave,,Etobicoke,,,,,32f0037ad76ff45b
+-79.5467847,43.5968071,70,Foch Ave,,Etobicoke,,,,,b4b2d3249dffcdd7
+-79.5462747,43.5968622,71,Foch Ave,,Etobicoke,,,,,8bd9cd10c20ee020
+-79.5462717,43.5968804,71A,Foch Ave,,Etobicoke,,,,,247672186f9dffdb
+-79.5463963,43.5971009,75,Foch Ave,,Etobicoke,,,,,34d66dfd09b5c157
+-79.5463489,43.5970102,73,Foch Ave,,Etobicoke,,,,,5dfda4cda28609d4
+-79.5461594,43.5966476,67,Foch Ave,,Etobicoke,,,,,16a3d252ec48292d
+-79.5461879,43.5967128,69,Foch Ave,,Etobicoke,,,,,30106989cc5159ba
+-79.5438971,43.5970245,7,Owen Dr,,Etobicoke,,,,,0633677fdc4c1bf3
+-79.5435514,43.5969115,182,Brown's Line,,Etobicoke,,,,,d6e7c70aa17efeda
+-79.5434203,43.5969719,184,Brown's Line,,Etobicoke,,,,,7c7e6cdb6b71847e
+-79.5435485,43.5970331,198,Brown's Line,,Etobicoke,,,,,d22d5559dd8a3130
+-79.5455961,43.5977488,27,Albright Ave,,Etobicoke,,,,,1f9ef3b7e9dbc78d
+-79.5393958,43.5869524,397,Lake Promenade,,Etobicoke,,,,,389d8732313d9e3e
+-79.5409944,43.5870814,9,Forty Second St,,Etobicoke,,,,,1be4ba4cd440e765
+-79.5410504,43.5876506,16,Forty First St,,Etobicoke,,,,,f0a3fdf570878200
+-79.5409157,43.5875858,14,Forty First St,,Etobicoke,,,,,7bfb59b52c558367
+-79.5408428,43.5875309,12,Forty First St,,Etobicoke,,,,,fbcdcded4126a0f6
+-79.540695,43.587493,8,Forty First St,,Etobicoke,,,,,31e57b5e2bac30df
+-79.5405833,43.5874165,6,Forty First St,,Etobicoke,,,,,0233a8a8beec3cb0
+-79.5418295,43.5892362,30,Garden Pl,,Etobicoke,,,,,afc088c9c84911cd
+-79.541699,43.5892269,26,Garden Pl,,Etobicoke,,,,,8bc845b907000d15
+-79.5415444,43.5892416,24,Garden Pl,,Etobicoke,,,,,360e9ff3b1d355a9
+-79.5414067,43.5893028,20,Garden Pl,,Etobicoke,,,,,ef2d06c1f2350525
+-79.5412192,43.5893725,16,Garden Pl,,Etobicoke,,,,,d2238a1c937e88da
+-79.5432431,43.5896864,73,Forty First St,,Etobicoke,,,,,ce486041ad1e8498
+-79.5389551,43.5897506,33,Thirty Ninth St,,Etobicoke,,,,,43e7e80348fe92ae
+-79.5389663,43.5898376,35,Thirty Ninth St,,Etobicoke,,,,,0aa1265ea62802e6
+-79.5391319,43.5901381,43,Thirty Ninth St,,Etobicoke,,,,,98df058294a5040f
+-79.5390808,43.590008,41,Thirty Ninth St,,Etobicoke,,,,,e9e02c1d8787cc70
+-79.5390129,43.5899773,39,Thirty Ninth St,,Etobicoke,,,,,dd9ae6c3e6968a0d
+-79.5399532,43.5903637,61B,James St,,Etobicoke,,,,,a8218858dd6f312e
+-79.5421665,43.5921936,3805,Lake Shore Blvd W,,Etobicoke,,,,,593b5ba0580f8000
+-79.5421024,43.5922828,3803,Lake Shore Blvd W,,Etobicoke,,,,,3e9efc7e7a98f124
+-79.5420031,43.5922906,3801,Lake Shore Blvd W,,Etobicoke,,,,,836856512d2a6c68
+-79.5417941,43.592176,122,Fortieth St,,Etobicoke,,,,,0e09722510560114
+-79.541804,43.5922275,124,Fortieth St,,Etobicoke,,,,,edc0297220ddbe86
+-79.5419374,43.5923183,3799,Lake Shore Blvd W,,Etobicoke,,,,,e8a8f8c625351db5
+-79.5382045,43.5885416,362,Lake Promenade,,Etobicoke,,,,,25b12a6e87b50c95
+-79.5380184,43.5886039,354,Lake Promenade,,Etobicoke,,,,,7bc45f31514904cb
+-79.5378788,43.5886905,352,Lake Promenade,,Etobicoke,,,,,1617ab91f2c64f6c
+-79.5377404,43.5887787,350,Lake Promenade,,Etobicoke,,,,,c4487cac14127467
+-79.53861,43.5890349,7,Thirty Ninth St,,Etobicoke,,,,,5949cac02503a6a3
+-79.5387348,43.5892563,11,Thirty Ninth St,,Etobicoke,,,,,1e9bdc229f9e3673
+-79.5386366,43.5891288,7A,Thirty Ninth St,,Etobicoke,,,,,03cc16139f3c5ed3
+-79.5364696,43.5901742,33,Thirty Seventh St,,Etobicoke,,,,,a032093ee44d0bb9
+-79.5354541,43.5895778,22,Thirty Sixth St,,Etobicoke,,,,,a81596b558b24781
+-79.5355627,43.5896963,24,Thirty Sixth St,,Etobicoke,,,,,863b7b057376f446
+-79.5356092,43.5898229,26,Thirty Sixth St,,Etobicoke,,,,,8fe06ad34d553075
+-79.5356437,43.5899314,28,Thirty Sixth St,,Etobicoke,,,,,f00564323ab7ae89
+-79.5356649,43.5900757,30,Thirty Sixth St,,Etobicoke,,,,,b09437be18981ee9
+-79.5365126,43.5903435,35,Thirty Seventh St,,Etobicoke,,,,,13343d9e0c4b4094
+-79.5472158,43.5924022,32,Enfield Ave,,Etobicoke,,,,,c6ae6d26bcdd57d6
+-79.547092,43.5924006,28,Enfield Ave,,Etobicoke,,,,,2c472ee250ac4668
+-79.5469555,43.5924078,24,Enfield Ave,,Etobicoke,,,,,c8dfb5775482da7c
+-79.5446046,43.5931065,9,Foch Ave,,Etobicoke,,,,,053d11dab70dab79
+-79.5517125,43.5969238,50,Westleigh Cres,,Etobicoke,,,,,f20e682b3d2a757f
+-79.5518365,43.5970348,48,Westleigh Cres,,Etobicoke,,,,,6a40b4b053ce2593
+-79.5515557,43.5968602,52,Westleigh Cres,,Etobicoke,,,,,586bbebb2c6df469
+-79.5511994,43.5967386,56,Westleigh Cres,,Etobicoke,,,,,3c45daa38e5b0c3f
+-79.5508046,43.5966601,60,Westleigh Cres,,Etobicoke,,,,,0900a48772f47b69
+-79.5510021,43.5967001,58,Westleigh Cres,,Etobicoke,,,,,a6cf217ac68d3081
+-79.5497747,43.5977651,73,Woodbury Rd,,Etobicoke,,,,,d01fed895dc6a433
+-79.5493894,43.5973141,29,Sunset Ave,,Etobicoke,,,,,9b543437aabc5424
+-79.5495359,43.5973929,31,Sunset Ave,,Etobicoke,,,,,b5b29f66dd906d8a
+-79.5495464,43.597474,33,Sunset Ave,,Etobicoke,,,,,7cbdfb47673818b2
+-79.5491152,43.5974183,70,Albright Ave,,Etobicoke,,,,,903753129bf26c86
+-79.5495931,43.5975917,35,Sunset Ave,,Etobicoke,,,,,7578c69e1ff2c078
+-79.5494395,43.5977968,69,Woodbury Rd,,Etobicoke,,,,,6f1dd4ec294c3c4f
+-79.5468416,43.5951576,41,Gort Ave,,Etobicoke,,,,,5f04768213cb36b7
+-79.5468748,43.5952431,43,Gort Ave,,Etobicoke,,,,,ec0f93d8febde16a
+-79.5474622,43.5953355,52,Gort Ave,,Etobicoke,,,,,56ffd7920544eae3
+-79.547478,43.5954049,54,Gort Ave,,Etobicoke,,,,,cdc91f290c9ca1b6
+-79.5476874,43.5958392,60,Gort Ave,,Etobicoke,,,,,0dc9f4cd751eb943
+-79.5476082,43.5956321,66,Jellicoe Ave,,Etobicoke,,,,,3b30af808908bd70
+-79.544522,43.5940546,29A,Alcan Ave,,Etobicoke,,,,,890fb5ca1024d69b
+-79.5444111,43.5940512,29,Alcan Ave,,Etobicoke,,,,,adb2127dac810872
+-79.5442859,43.5940579,24,Lloyd George Ave,,Etobicoke,,,,,269883762c6b861b
+-79.5444339,43.5944933,22,Alcan Ave,,Etobicoke,,,,,25bd0081edad3269
+-79.5462163,43.5967782,69A,Foch Ave,,Etobicoke,,,,,605fb7334ada6af4
+-79.5458843,43.5970219,34,Owen Dr,,Etobicoke,,,,,d4f995285fe630ed
+-79.5457535,43.5970387,30,Owen Dr,,Etobicoke,,,,,285a886266533952
+-79.5478168,43.597272,83,Gort Ave,,Etobicoke,,,,,3a5f8b4a1a9c0df2
+-79.5476786,43.5973513,53,Albright Ave,,Etobicoke,,,,,86d2e8da8ac18165
+-79.5474918,43.5973939,51,Albright Ave,,Etobicoke,,,,,17bf50d335f1cbb1
+-79.5478517,43.5976937,54A,Albright Ave,,Etobicoke,,,,,b17ed8c96f7ec04c
+-79.5477619,43.5977147,54,Albright Ave,,Etobicoke,,,,,6d09e44393121ba8
+-79.545505,43.5977681,25,Albright Ave,,Etobicoke,,,,,37d833a49901d183
+-79.5454148,43.5977872,23,Albright Ave,,Etobicoke,,,,,59e4b000f13fba36
+-79.5450542,43.5971833,22A,Owen Dr,,Etobicoke,,,,,cbdc2fcd071a79b2
+-79.5449641,43.5972037,22,Owen Dr,,Etobicoke,,,,,eca33d707975861c
+-79.5448719,43.5972239,20B,Owen Dr,,Etobicoke,,,,,308436b65f1d5c59
+-79.5448203,43.5972069,20,Owen Dr,,Etobicoke,,,,,d32dce1634633506
+-79.5404643,43.5873009,2,Forty First St,,Etobicoke,,,,,20063bc2f1de8344
+-79.5402471,43.5870641,400,Lake Promenade,,Etobicoke,,,,,ac06750a31342182
+-79.5401533,43.5871711,398A,Lake Promenade,,Etobicoke,,,,,734e39d22d7eb0d5
+-79.5404993,43.5873787,4,Forty First St,,Etobicoke,,,,,1dc4877c289eb5b7
+-79.5400726,43.5876201,1,Forty First St,,Etobicoke,,,,,b89b7a0900986ac6
+-79.5406708,43.5879789,15,Forty First St,,Etobicoke,,,,,ce71949fad29bc91
+-79.5432106,43.5895945,71,Forty First St,,Etobicoke,,,,,8d9ceb171a36f17e
+-79.5431432,43.5895899,69,Forty First St,,Etobicoke,,,,,0ad7409f764a3d21
+-79.5428938,43.58979,106,James St,,Etobicoke,,,,,9895d4ec0b91e81d
+-79.542756,43.5898513,104,James St,,Etobicoke,,,,,3cec24cc5df0b1ae
+-79.5426053,43.5898845,102,James St,,Etobicoke,,,,,216018275fa50156
+-79.5423874,43.5899806,92,James St,,Etobicoke,,,,,e38f42490f67e8dd
+-79.5425009,43.5903827,25,Villa Rd,,Etobicoke,,,,,b1b4ca980746b6c1
+-79.5425717,43.5908123,30,Villa Rd,,Etobicoke,,,,,2aeaaff1779632cb
+-79.5397261,43.5902934,59,James St,,Etobicoke,,,,,296e2347e4adcc27
+-79.5398614,43.5903817,61A,James St,,Etobicoke,,,,,6ccaadd5f72074f8
+-79.5396952,43.5904064,57,James St,,Etobicoke,,,,,b84c489f7f7aac5e
+-79.539924,43.5906794,56,Thirty Ninth St,,Etobicoke,,,,,7a1f610c59d593e4
+-79.5399578,43.5908149,60,Thirty Ninth St,,Etobicoke,,,,,db2f992c1d49d8d2
+-79.5391541,43.5902464,45,Thirty Ninth St,,Etobicoke,,,,,83dc03cf62ef566c
+-79.5393745,43.5905032,53,James St,,Etobicoke,,,,,46936703883eb251
+-79.5418817,43.5923311,3797,Lake Shore Blvd W,,Etobicoke,,,,,118b9937e367b4c6
+-79.5418204,43.5923456,3795,Lake Shore Blvd W,,Etobicoke,,,,,50bd3dd9deca7dd0
+-79.5414911,43.5923621,3785,Lake Shore Blvd W,,Etobicoke,,,,,dcbd46af6503c65e
+-79.5412264,43.5921366,117,Fortieth St,,Etobicoke,,,,,a0d0ec2dbd3bea36
+-79.5412394,43.5923853,3775,Lake Shore Blvd W,,Etobicoke,,,,,f91f87b0528dda77
+-79.5413923,43.5924448,3783,Lake Shore Blvd W,,Etobicoke,,,,,3a77f99d3dcdd147
+-79.541304,43.5924821,3777,Lake Shore Blvd W,,Etobicoke,,,,,61f3b43d035175b1
+-79.5386838,43.5891878,9,Thirty Ninth St,,Etobicoke,,,,,16603fe94bf41f0e
+-79.5387294,43.5893676,21,Thirty Ninth St,,Etobicoke,,,,,f75dc2dd3031d683
+-79.5378956,43.5890148,2,Thirty Eighth St,,Etobicoke,,,,,dbdd2e6e620311ac
+-79.5379295,43.5891503,6,Thirty Eighth St,,Etobicoke,,,,,f051a784f4996275
+-79.5379643,43.5892498,10,Thirty Eighth St,,Etobicoke,,,,,52fd34e04186eb30
+-79.5380227,43.5893946,12,Thirty Eighth St,,Etobicoke,,,,,3ee4564290243909
+-79.5526693,43.5974325,38,Westleigh Cres,,Etobicoke,,,,,6c22fad80cda98c6
+-79.5526902,43.5975948,36,Westleigh Cres,,Etobicoke,,,,,b9ee921c05584eeb
+-79.5525259,43.5977278,34,Westleigh Cres,,Etobicoke,,,,,19e7b78c2b919291
+-79.5479367,43.5933297,65,Enfield Ave,,Etobicoke,,,,,8c16ca23919e8901
+-79.5472487,43.5899641,26,Forty Third St,,Etobicoke,,,,,8a5784606cda1045
+-79.547364,43.592422,36,Enfield Ave,,Etobicoke,,,,,bfac3b7de2c4d6c3
+-79.5472704,43.592709,40,Enfield Ave,,Etobicoke,,,,,03c813347c762b95
+-79.5468186,43.5924331,18,Enfield Ave,,Etobicoke,,,,,76c40e1dee47f0d2
+-79.547875,43.5928067,55,Enfield Ave,,Etobicoke,,,,,fdae317f60fa97aa
+-79.5445895,43.5931637,9A,Foch Ave,,Etobicoke,,,,,1ce0eac793c8487e
+-79.5446671,43.5932323,11,Foch Ave,,Etobicoke,,,,,b08de34c594ca6db
+-79.5446958,43.5932977,11A,Foch Ave,,Etobicoke,,,,,4a3a971629386f57
+-79.5511523,43.5971522,39,Westleigh Cres,,Etobicoke,,,,,38177f6cb468e1c0
+-79.551023,43.5971029,41,Westleigh Cres,,Etobicoke,,,,,0dd94bad75bdc92d
+-79.5508707,43.5970809,43,Westleigh Cres,,Etobicoke,,,,,422a2e4a8273d6ff
+-79.5506314,43.5966594,62,Westleigh Cres,,Etobicoke,,,,,2048f51e6facb942
+-79.5504075,43.5966821,64,Westleigh Cres,,Etobicoke,,,,,d09d4077da4cb6ab
+-79.55023,43.596716,66,Westleigh Cres,,Etobicoke,,,,,c275ee1700215473
+-79.5507587,43.5970528,45,Westleigh Cres,,Etobicoke,,,,,67eae3486e342d84
+-79.5497867,43.5980826,39,Sunset Ave,,Etobicoke,,,,,f5e9036e06739c8b
+-79.5499327,43.5984064,47,Sunset Ave,,Etobicoke,,,,,3d1e868c3d29e72f
+-79.5498249,43.5981508,41,Sunset Ave,,Etobicoke,,,,,4da79f249727616f
+-79.5498504,43.5982252,43,Sunset Ave,,Etobicoke,,,,,8ce6a5b68ffb58aa
+-79.5498606,43.5983154,45,Sunset Ave,,Etobicoke,,,,,08790b7c3e07ba5d
+-79.5496246,43.5978262,71,Woodbury Rd,,Etobicoke,,,,,f5e16cc1e492cead
+-79.5493019,43.5978491,67,Woodbury Rd,,Etobicoke,,,,,bc707161749c9b5d
+-79.5476191,43.5957118,56,Gort Ave,,Etobicoke,,,,,591243fa3deca1ab
+-79.5476503,43.5957882,58,Gort Ave,,Etobicoke,,,,,681470ba6e18ef00
+-79.5469503,43.5953082,45,Gort Ave,,Etobicoke,,,,,f8d532877d6df48a
+-79.5469582,43.5953792,47,Gort Ave,,Etobicoke,,,,,f53579f49ef68970
+-79.5470059,43.5954371,49,Gort Ave,,Etobicoke,,,,,7508a9a3e22133e6
+-79.5470171,43.595506,51,Gort Ave,,Etobicoke,,,,,951d04786a49530a
+-79.5440279,43.5946214,29,Lloyd George Ave,,Etobicoke,,,,,d06598ebe82b3edb
+-79.5439295,43.5942074,25,Alcan Ave,,Etobicoke,,,,,4fb1708b0d3c6519
+-79.543802,43.5942313,23,Alcan Ave,,Etobicoke,,,,,d25014fd986f3cd6
+-79.5436527,43.5942564,21,Alcan Ave,,Etobicoke,,,,,defd95dca68b20d5
+-79.5435527,43.5942911,19,Alcan Ave,,Etobicoke,,,,,209ca16ea8ff9688
+-79.5434244,43.594298,17,Alcan Ave,,Etobicoke,,,,,186da070ea71e321
+-79.5438713,43.5946194,18A,Alcan Ave,,Etobicoke,,,,,0033926c65977f68
+-79.545377,43.5948532,39,Foch Ave,,Etobicoke,,,,,e1447dac6499efee
+-79.5476537,43.5977292,52,Albright Ave,,Etobicoke,,,,,ad7a35323672a9ba
+-79.5474574,43.5977897,50,Albright Ave,,Etobicoke,,,,,3ea9b0bd020ced83
+-79.5472319,43.5974571,49,Albright Ave,,Etobicoke,,,,,74f9de772dc5e791
+-79.546971,43.5972512,76,Foch Ave,,Etobicoke,,,,,44d1581e7dc1a3c8
+-79.5470322,43.5974098,78,Foch Ave,,Etobicoke,,,,,e4b05a0a16dd58c1
+-79.5472106,43.5977505,82,Foch Ave,,Etobicoke,,,,,18a42911461befb8
+-79.5478681,43.5982077,49,Woodbury Rd,,Etobicoke,,,,,8a3bae366dcf503f
+-79.5447822,43.5972451,20A,Owen Dr,,Etobicoke,,,,,a5e91bd9aa26268b
+-79.5447042,43.597286,18A,Owen Dr,,Etobicoke,,,,,518e116ffa3fd620
+-79.5446146,43.5973032,18,Owen Dr,,Etobicoke,,,,,a7a71387924a345f
+-79.541061,43.5882359,27,Forty First St,,Etobicoke,,,,,5b8afa4affa6476b
+-79.5407422,43.5880129,17,Forty First St,,Etobicoke,,,,,b45136bfa23a71f9
+-79.5408118,43.5880749,19,Forty First St,,Etobicoke,,,,,93744cc2819ee264
+-79.5403614,43.5878098,9,Forty First St,,Etobicoke,,,,,f85af530e0a4c510
+-79.5402904,43.5877647,7,Forty First St,,Etobicoke,,,,,1ee60984e73f122d
+-79.5424241,43.5908227,28,Villa Rd,,Etobicoke,,,,,b894e3a648562945
+-79.5421897,43.5895946,97,James St,,Etobicoke,,,,,2524777be31423c3
+-79.5420854,43.5896192,95,James St,,Etobicoke,,,,,99395234d6daacbe
+-79.5420056,43.5896346,93,James St,,Etobicoke,,,,,2bbd35a2b8167475
+-79.5419052,43.5896573,91,James St,,Etobicoke,,,,,f9b8b416d62fb43e
+-79.5418144,43.5897006,89,James St,,Etobicoke,,,,,4a460a19c18dec40
+-79.5420495,43.590054,90,James St,,Etobicoke,,,,,945d6fd422a19288
+-79.5392587,43.5905269,51,James St,,Etobicoke,,,,,f87c25b7b6204717
+-79.5390975,43.5905338,49,James St,,Etobicoke,,,,,cdbbf0aed36d883b
+-79.5389586,43.5905903,47,James St,,Etobicoke,,,,,91de5390a010ea31
+-79.5388724,43.5905779,45,James St,,Etobicoke,,,,,af57e23a619867db
+-79.5423431,43.5908396,26,Villa Rd,,Etobicoke,,,,,ad79a1f933b898ae
+-79.5412468,43.5924607,3775-3777,Lake Shore Blvd W,,Etobicoke,,,,,4bbd8f037740e9c3
+-79.5411789,43.5925091,3771-3773,Lake Shore Blvd W,,Etobicoke,,,,,cc3bdd1aa482bbe8
+-79.5411543,43.5925144,3769,Lake Shore Blvd W,,Etobicoke,,,,,f1dd93c73168866d
+-79.5406874,43.5908692,85,Fortieth St,,Etobicoke,,,,,4114290e39a76bdf
+-79.5407307,43.5909577,87A,Fortieth St,,Etobicoke,,,,,2a798e78ad066f60
+-79.5407599,43.5910658,87,Fortieth St,,Etobicoke,,,,,604aa0fa6d62dac2
+-79.5407923,43.5911407,89,Fortieth St,,Etobicoke,,,,,eb5dacc15a9cf53b
+-79.5380692,43.5895213,14,Thirty Eighth St,,Etobicoke,,,,,0a279a16d2431090
+-79.5372841,43.5883407,351,Lake Promenade,,Etobicoke,,,,,138694ddf4f2cd04
+-79.5373039,43.5888493,340,Lake Promenade,,Etobicoke,,,,,365c5fdb8d21dbbd
+-79.5371262,43.5884266,347,Lake Promenade,,Etobicoke,,,,,87d96b09ec973343
+-79.5369963,43.5884728,345,Lake Promenade,,Etobicoke,,,,,29c0d7678a2fe458
+-79.5368731,43.5884736,341X,Lake Promenade,,Etobicoke,,,,,6bbfc34317ade77b
+-79.5470738,43.5903996,22,Forty Third St,,Etobicoke,,,,,a348847f75ea2ea8
+-79.5478602,43.5929056,57,Enfield Ave,,Etobicoke,,,,,b955f2452e696a6e
+-79.5478574,43.5930226,59,Enfield Ave,,Etobicoke,,,,,924f32b306a1646a
+-79.5478672,43.5931307,61,Enfield Ave,,Etobicoke,,,,,f6415e26702c773c
+-79.547902,43.5932302,63,Enfield Ave,,Etobicoke,,,,,3168ea039f46ef41
+-79.5444739,43.5921402,52,Exmoor Dr,,Etobicoke,,,,,0eb2834ab13232e5
+-79.5505261,43.5970678,47,Westleigh Cres,,Etobicoke,,,,,7265663c713d22a3
+-79.5504038,43.5970741,49,Westleigh Cres,,Etobicoke,,,,,b7da47ff9cb4232b
+-79.5502488,43.5971138,51,Westleigh Cres,,Etobicoke,,,,,e036bbbba4cac8f7
+-79.5522888,43.5972836,42,Westleigh Cres,,Etobicoke,,,,,febdecc87811f89f
+-79.5524738,43.597322,40,Westleigh Cres,,Etobicoke,,,,,7a57c0c92cf19ab5
+-79.552092,43.5972271,44,Westleigh Cres,,Etobicoke,,,,,6e9ba151e08d264e
+-79.54919,43.5978657,65,Woodbury Rd,,Etobicoke,,,,,19433903d7992986
+-79.5494669,43.5982024,68,Woodbury Rd,,Etobicoke,,,,,3105ee89c61d1b3b
+-79.5493174,43.5982365,66,Woodbury Rd,,Etobicoke,,,,,df43259ecd3e6624
+-79.5492129,43.5982952,64,Woodbury Rd,,Etobicoke,,,,,3687b4a9f3ef0cd6
+-79.5490339,43.5974286,68,Albright Ave,,Etobicoke,,,,,8364524ee71959ed
+-79.5488906,43.5974387,66,Albright Ave,,Etobicoke,,,,,d7c25113e35e0d55
+-79.5471835,43.5957963,55,Gort Ave,,Etobicoke,,,,,e7dd447bd685e06d
+-79.5470336,43.5958484,56,Jellicoe Ave,,Etobicoke,,,,,2ccbc0fdf3a7bf8c
+-79.5466183,43.5947019,33,Gort Ave,,Etobicoke,,,,,4ac353317ebe8bd2
+-79.546701,43.5948021,35,Gort Ave,,Etobicoke,,,,,e7605d0d133500ae
+-79.5467744,43.5949108,37,Gort Ave,,Etobicoke,,,,,3cc817f544b951e2
+-79.5459689,43.5947903,36,Foch Ave,,Etobicoke,,,,,93ca015430139286
+-79.5459214,43.5947087,34,Foch Ave,,Etobicoke,,,,,e1552e999a6a7cb9
+-79.5454056,43.5949186,39A,Foch Ave,,Etobicoke,,,,,3e2fb698dcb0fa17
+-79.5453198,43.5947224,35,Foch Ave,,Etobicoke,,,,,5ce78799286cf944
+-79.545288,43.5947726,37,Foch Ave,,Etobicoke,,,,,6032ebd5c9279647
+-79.5454431,43.5950177,41,Foch Ave,,Etobicoke,,,,,b67562256cc41c62
+-79.5454835,43.5951086,43A,Foch Ave,,Etobicoke,,,,,8121dd8c9ed7cda6
+-79.5455488,43.5952455,45,Foch Ave,,Etobicoke,,,,,56b8882eb4f45e38
+-79.5455139,43.5951395,43,Foch Ave,,Etobicoke,,,,,8bfa1c5c790488a3
+-79.5473714,43.5981483,88A,Foch Ave,,Etobicoke,,,,,40a7107748c1f5b0
+-79.5474722,43.5982041,90,Foch Ave,,Etobicoke,,,,,834324452e4cee12
+-79.5474588,43.5983168,92,Foch Ave,,Etobicoke,,,,,f3564beb4e209890
+-79.5472445,43.597886,84,Foch Ave,,Etobicoke,,,,,21b7a5e5f1fdb1ba
+-79.5473034,43.5980128,86,Foch Ave,,Etobicoke,,,,,75654cf3b567b81d
+-79.5473505,43.5981003,88,Foch Ave,,Etobicoke,,,,,a0a8e552b8bc9f58
+-79.5453202,43.5978106,23A,Albright Ave,,Etobicoke,,,,,d459f0c12761412b
+-79.5452399,43.5978339,21,Albright Ave,,Etobicoke,,,,,fb15207aac8091cc
+-79.5451537,43.5978579,21A,Albright Ave,,Etobicoke,,,,,730d033df384a868
+-79.5455819,43.5982286,24,Albright Ave,,Etobicoke,,,,,80f67fb9ddf05127
+-79.5454631,43.5982251,22,Albright Ave,,Etobicoke,,,,,baf443ccd13f3c20
+-79.5405035,43.5879001,13,Forty First St,,Etobicoke,,,,,0f4bf32a1f5a4520
+-79.5404324,43.587855,11,Forty First St,,Etobicoke,,,,,a2feba8f4941bdd9
+-79.5402412,43.5877,3,Forty First St,,Etobicoke,,,,,6670bf6e4c9c89c5
+-79.5404962,43.5882921,9,Hilo Rd,,Etobicoke,,,,,7a1a04628cdfbea1
+-79.5403743,43.5882716,7,Hilo Rd,,Etobicoke,,,,,efad598e188ae00e
+-79.539975,43.588069,6,Fortieth St,,Etobicoke,,,,,c6071cf4af1937c8
+-79.5402176,43.5882792,5,Hilo Rd,,Etobicoke,,,,,7aed2fd063517820
+-79.5400809,43.5882955,3,Hilo Rd,,Etobicoke,,,,,45df1b2a6bef9d3f
+-79.5418585,43.5900829,86,James St,,Etobicoke,,,,,9dd52041d44ad7f6
+-79.5416845,43.5901077,82,James St,,Etobicoke,,,,,931bf9ecb2c78d81
+-79.5416578,43.5896752,87,James St,,Etobicoke,,,,,61c17ac952484960
+-79.5414955,43.5897271,83,James St,,Etobicoke,,,,,d9122f56d769f2c3
+-79.5413204,43.5897969,77,James St,,Etobicoke,,,,,f759bb380eef8531
+-79.541123,43.5898281,75,James St,,Etobicoke,,,,,491849a9b3d1df8c
+-79.5414727,43.590159,80,James St,,Etobicoke,,,,,6f1f71a4a00d4db3
+-79.5422678,43.5908522,24,Villa Rd,,Etobicoke,,,,,a63e87ee4d26f254
+-79.5427361,43.5911835,27,Branch Ave,,Etobicoke,,,,,92fc00963e0c3a07
+-79.5426359,43.5912273,25,Branch Ave,,Etobicoke,,,,,c048d86de220856c
+-79.5425358,43.591271,23,Branch Ave,,Etobicoke,,,,,3186a706b62f460b
+-79.5424113,43.5912964,19,Branch Ave,,Etobicoke,,,,,3bc4782ab2a33c22
+-79.542299,43.591331,17,Branch Ave,,Etobicoke,,,,,e0bd953e92caa264
+-79.5408281,43.5911952,91,Fortieth St,,Etobicoke,,,,,57aa3e6609176751
+-79.5408633,43.5912766,93,Fortieth St,,Etobicoke,,,,,0d68eb2d92ffec5f
+-79.5409695,43.5913864,97,Fortieth St,,Etobicoke,,,,,9a45a3900681ab9a
+-79.5409786,43.5914567,99,Fortieth St,,Etobicoke,,,,,e21d106813bec34f
+-79.5408746,43.5913218,95,Fortieth St,,Etobicoke,,,,,d05293963fd0336d
+-79.5399802,43.5909142,62,Thirty Ninth St,,Etobicoke,,,,,bdcf4f7f44a467a0
+-79.5400002,43.5909948,64,Thirty Ninth St,,Etobicoke,,,,,c835b44d1c46665c
+-79.536806,43.5884876,339,Lake Promenade,,Etobicoke,,,,,30b893545ab1c48a
+-79.5366309,43.5885574,329,Lake Promenade,,Etobicoke,,,,,c43c81c51f21eb31
+-79.5371179,43.5889058,338,Lake Promenade,,Etobicoke,,,,,a8df9dfd44c0370a
+-79.5369878,43.5889375,336,Lake Promenade,,Etobicoke,,,,,a1c559666a837ea3
+-79.5373229,43.5891335,3,Thirty Eighth St,,Etobicoke,,,,,e56629b36b1790b4
+-79.5374161,43.5893778,9,Thirty Eighth St,,Etobicoke,,,,,9642470f5aac93b9
+-79.5374869,43.5895228,11,Thirty Eighth St,,Etobicoke,,,,,f7c14de8582fed25
+-79.546931,43.5904985,20,Forty Third St,,Etobicoke,,,,,3e1e21247e05b7dd
+-79.5469201,43.5905847,18,Forty Third St,,Etobicoke,,,,,bb8fe7286abb6db8
+-79.5468501,43.5906494,16,Forty Third St,,Etobicoke,,,,,7d4ae188ac4c7f84
+-79.5462659,43.5901037,5-25,Forty Third St,,Etobicoke,,,,,d88c7473fd45598f
+-79.5472797,43.5928351,44,Enfield Ave,,Etobicoke,,,,,90edf38347f67872
+-79.5472769,43.5929521,48,Enfield Ave,,Etobicoke,,,,,b35da0b64e929d67
+-79.5472369,43.5930687,52,Enfield Ave,,Etobicoke,,,,,69667ee0f3ed1990
+-79.5443178,43.5922391,50,Exmoor Dr,,Etobicoke,,,,,04d5831b4e11af78
+-79.5514219,43.5972727,35,Westleigh Cres,,Etobicoke,,,,,b703acc857b660dc
+-79.5515062,43.5973728,33,Westleigh Cres,,Etobicoke,,,,,da2d2051e85d0e8e
+-79.5516277,43.5974734,31,Westleigh Cres,,Etobicoke,,,,,23e4932c5f8ce83a
+-79.5516874,43.5975642,29,Westleigh Cres,,Etobicoke,,,,,8d6959815f07f6e4
+-79.5517092,43.5976905,27,Westleigh Cres,,Etobicoke,,,,,3592a8e2f7eb2a43
+-79.5523878,43.5978071,32,Westleigh Cres,,Etobicoke,,,,,ba35d370d8cf2d0d
+-79.5522609,43.5979316,30,Westleigh Cres,,Etobicoke,,,,,6023b63178e4348b
+-79.5487372,43.5974644,64B,Albright Ave,,Etobicoke,,,,,f2c3e401bde095e2
+-79.5487524,43.597518,64,Albright Ave,,Etobicoke,,,,,2123406197b13a5d
+-79.5486482,43.5974863,64A,Albright Ave,,Etobicoke,,,,,cea1523d1bb9142c
+-79.5485727,43.5975303,62A,Albright Ave,,Etobicoke,,,,,8b6f1660a5fcd4a7
+-79.5483189,43.5972262,57,Albright Ave,,Etobicoke,,,,,3d02b5eac6a30cf6
+-79.5484824,43.5975502,62,Albright Ave,,Etobicoke,,,,,41204ba55d54cadd
+-79.5483761,43.5975281,60B,Albright Ave,,Etobicoke,,,,,7e3092293a7d8bbd
+-79.5482944,43.5975536,60A,Albright Ave,,Etobicoke,,,,,3d8a37e2b58112d6
+-79.5459341,43.5948937,38,Foch Ave,,Etobicoke,,,,,b8e09c68c9509490
+-79.5460989,43.5950531,42,Foch Ave,,Etobicoke,,,,,1fb160e97578255d
+-79.5460393,43.5949533,40,Foch Ave,,Etobicoke,,,,,b0b3da91f01b3884
+-79.5461208,43.5951705,44,Foch Ave,,Etobicoke,,,,,68f208f37ef99c1c
+-79.5461379,43.595265,46,Foch Ave,,Etobicoke,,,,,d741d0c76958b7e1
+-79.5466586,43.5954745,49,Jellicoe Ave,,Etobicoke,,,,,7d00d35994f747d7
+-79.5465328,43.5955539,47,Jellicoe Ave,,Etobicoke,,,,,ad59aef15607d7d6
+-79.545507,43.5951725,43B,Foch Ave,,Etobicoke,,,,,2fbb3847fbc0ddd5
+-79.5445755,43.5947287,30,Lloyd George Ave,,Etobicoke,,,,,cc0cb561299c4a19
+-79.5445799,43.5947884,32,Lloyd George Ave,,Etobicoke,,,,,10a2272c9386312a
+-79.5449289,43.5950986,40,Lloyd George Ave,,Etobicoke,,,,,dc13488af262e7be
+-79.54468,43.5949531,34,Lloyd George Ave,,Etobicoke,,,,,487724046a5df769
+-79.5446915,43.5950052,36,Lloyd George Ave,,Etobicoke,,,,,1f41ac8617fb735d
+-79.5468298,43.5981773,89,Foch Ave,,Etobicoke,,,,,5a956137cda885a3
+-79.5468746,43.5982748,91,Foch Ave,,Etobicoke,,,,,e4a91452a10906a5
+-79.5469177,43.5983832,93,Foch Ave,,Etobicoke,,,,,4b069df1b1e259aa
+-79.546404,43.5972058,77,Foch Ave,,Etobicoke,,,,,29cce3a0e41d058f
+-79.5464588,43.5973062,77A,Foch Ave,,Etobicoke,,,,,dca11616eb7d9bc9
+-79.5453414,43.5982578,20,Albright Ave,,Etobicoke,,,,,012a564f369dec49
+-79.5452026,43.5983013,18,Albright Ave,,Etobicoke,,,,,311d53c0bdf6caaa
+-79.5399313,43.5874862,398,Lake Promenade,,Etobicoke,,,,,22fc4a0bf28d0d7f
+-79.5396698,43.5875112,396,Lake Promenade,,Etobicoke,,,,,14ffcd4fb37adbcb
+-79.5390303,43.5871835,387,Lake Promenade,,Etobicoke,,,,,34b6541e0da75ffc
+-79.5389731,43.5874212,385,Lake Promenade,,Etobicoke,,,,,248a9fbde8185454
+-79.5388397,43.5873792,383,Lake Promenade,,Etobicoke,,,,,0fb1acebbba2d5ef
+-79.5398798,43.5879057,4,Fortieth St,,Etobicoke,,,,,efddd1d06054b825
+-79.541323,43.5902021,78,James St,,Etobicoke,,,,,b0220f916962e883
+-79.5421067,43.5905002,23,Villa Rd,,Etobicoke,,,,,a2810b01780e5b4f
+-79.5419678,43.5905238,21,Villa Rd,,Etobicoke,,,,,1a1f916432374a2a
+-79.5418446,43.590557,19,Villa Rd,,Etobicoke,,,,,abb3b210fef2beaf
+-79.5416977,43.5905851,15,Villa Rd,,Etobicoke,,,,,74afce4c97f62a22
+-79.5411712,43.5902251,74,James St,,Etobicoke,,,,,b574651cb19af907
+-79.5428884,43.5915456,26,Branch Ave,,Etobicoke,,,,,60967e81e50b9287
+-79.5430739,43.5918606,3829A,Lake Shore Blvd W,,Etobicoke,,,,,8ae3b6635c2f4f1b
+-79.543077,43.5919014,3829,Lake Shore Blvd W,,Etobicoke,,,,,cccb03b577158871
+-79.5429755,43.5919025,3827A,Lake Shore Blvd W,,Etobicoke,,,,,1e49809abef4e9f2
+-79.5429846,43.5919432,3827,Lake Shore Blvd W,,Etobicoke,,,,,23dbe41a8269fe3a
+-79.5429134,43.5919289,3825A,Lake Shore Blvd W,,Etobicoke,,,,,520782e7f58b86e7
+-79.5429179,43.5919696,3825,Lake Shore Blvd W,,Etobicoke,,,,,6e22c24497daa6e6
+-79.5428331,43.5919587,3823A,Lake Shore Blvd W,,Etobicoke,,,,,d0612e56577cc48b
+-79.5428786,43.5920192,3819-3829,Lake Shore Blvd W,,Etobicoke,,,,,33962759783dacfe
+-79.5427624,43.5916341,22,Branch Ave,,Etobicoke,,,,,7ba4647e9e2eea94
+-79.5425538,43.5916503,18,Branch Ave,,Etobicoke,,,,,d9c94130833d2d64
+-79.5400561,43.591054,66,Thirty Ninth St,,Etobicoke,,,,,fd975d46b73d703c
+-79.5400702,43.5911269,68,Thirty Ninth St,,Etobicoke,,,,,52e8d3797b21391b
+-79.540147,43.5911864,70,Thirty Ninth St,,Etobicoke,,,,,2f19063680b32811
+-79.5401559,43.591266,74,Thirty Ninth St,,Etobicoke,,,,,70b687e8fa7e9376
+-79.5401951,43.5913713,76,Thirty Ninth St,,Etobicoke,,,,,1c97945edc0d7584
+-79.5402245,43.5914418,78,Thirty Ninth St,,Etobicoke,,,,,08efc577ac76aa76
+-79.5372204,43.5892763,5,Thirty Eighth St,,Etobicoke,,,,,889d18ba1ee5a7db
+-79.5368561,43.5889745,334,Lake Promenade,,Etobicoke,,,,,c53adb01ac95a3a2
+-79.5367088,43.5889804,332,Lake Promenade,,Etobicoke,,,,,41177f42c8735f0c
+-79.5367218,43.589405,12,Thirty Seventh St,,Etobicoke,,,,,5a221b90d578d505
+-79.5366999,43.5892876,8,Thirty Seventh St,,Etobicoke,,,,,c6417e4ab4be032f
+-79.5368063,43.5895559,14,Thirty Seventh St,,Etobicoke,,,,,4abae9e860b9a8a7
+-79.5382801,43.589874,26,Thirty Eighth St,,Etobicoke,,,,,d5f8167386ca1513
+-79.5460253,43.5900678,5,Forty Third St,,Etobicoke,,,,,19e964bdc408bb78
+-79.5464761,43.5903217,25,Forty Third St,,Etobicoke,,,,,f423bd5baf64c28b
+-79.5467542,43.5907169,14,Forty Third St,,Etobicoke,,,,,8da37d9a25ee61b6
+-79.5472721,43.5931502,56,Enfield Ave,,Etobicoke,,,,,db7a7b3d5396dea7
+-79.5472941,43.5932675,60,Enfield Ave,,Etobicoke,,,,,34507e890c38281f
+-79.5463426,43.5921389,25,Enfield Ave,,Etobicoke,,,,,6d9298c609fd61b5
+-79.5442091,43.5922798,48,Exmoor Dr,,Etobicoke,,,,,b41056cb5350a10f
+-79.552245,43.5980754,28,Westleigh Cres,,Etobicoke,,,,,8a7caa6562a7f2a6
+-79.5521558,43.5981824,26,Westleigh Cres,,Etobicoke,,,,,a76da365fd1d06b2
+-79.552128,43.5983081,24,Westleigh Cres,,Etobicoke,,,,,b47ac2aa5a111cad
+-79.5517683,43.5978083,25,Westleigh Cres,,Etobicoke,,,,,6c87258468ea2c0c
+-79.5517281,43.5979338,23,Westleigh Cres,,Etobicoke,,,,,07eb390d5ad7e377
+-79.5516978,43.5980229,21,Westleigh Cres,,Etobicoke,,,,,eb6b757ce4678095
+-79.5516364,43.5981398,19,Westleigh Cres,,Etobicoke,,,,,18547add15ea4968
+-79.5483164,43.5975827,60,Albright Ave,,Etobicoke,,,,,d381b06703a9bf23
+-79.5482287,43.597606,58A,Albright Ave,,Etobicoke,,,,,140374c8becef0fb
+-79.5481217,43.5976313,58,Albright Ave,,Etobicoke,,,,,2670d9282e2e2339
+-79.5480318,43.5976521,56A,Albright Ave,,Etobicoke,,,,,4914ecc11dcdbf94
+-79.5479417,43.597673,56,Albright Ave,,Etobicoke,,,,,43e09606f96927eb
+-79.5490403,43.5979088,63,Woodbury Rd,,Etobicoke,,,,,b18e25621a727a63
+-79.5463846,43.595534,45,Jellicoe Ave,,Etobicoke,,,,,b6effb18d0e106b7
+-79.5467978,43.5958634,54,Jellicoe Ave,,Etobicoke,,,,,9e0896eff45bdae1
+-79.5462588,43.5956134,43,Jellicoe Ave,,Etobicoke,,,,,b3d120a3cd1d0aa5
+-79.5461748,43.5953022,48,Foch Ave,,Etobicoke,,,,,264234e155d67961
+-79.5457849,43.5956974,41,Jellicoe Ave,,Etobicoke,,,,,508778eb0f98da15
+-79.5457254,43.5957039,39,Jellicoe Ave,,Etobicoke,,,,,919fd35c2e210b1f
+-79.5453293,43.593432,12,Foch Ave,,Etobicoke,,,,,3ddb3a116c2e631c
+-79.5447769,43.5950398,38,Lloyd George Ave,,Etobicoke,,,,,33788c1562c3c3eb
+-79.5447863,43.5952546,42,Lloyd George Ave,,Etobicoke,,,,,a31eff597fc23337
+-79.5455775,43.5953108,45A,Foch Ave,,Etobicoke,,,,,b7bf158210e079a1
+-79.5456443,43.5954075,47,Foch Ave,,Etobicoke,,,,,0336740a50ff786f
+-79.5456121,43.5957132,37,Jellicoe Ave,,Etobicoke,,,,,d0bf0b124cffe1e6
+-79.5454827,43.5957646,35B,Jellicoe Ave,,Etobicoke,,,,,ec10c9b897c096c3
+-79.5453852,43.5957824,35A,Jellicoe Ave,,Etobicoke,,,,,e38be53b28a1c23a
+-79.5464384,43.5974076,79,Foch Ave,,Etobicoke,,,,,f18aa11dcdf50afc
+-79.5465421,43.5975031,79A,Foch Ave,,Etobicoke,,,,,965537f0bc5a5afe
+-79.5466196,43.597599,81,Foch Ave,,Etobicoke,,,,,05a2fc622c14a7e1
+-79.5461884,43.5976522,37,Albright Ave,,Etobicoke,,,,,f1a69d4ede4b477a
+-79.5450242,43.597915,17,Albright Ave,,Etobicoke,,,,,69c85c152122e198
+-79.544852,43.5979456,15,Albright Ave,,Etobicoke,,,,,aff474a859587e3b
+-79.544691,43.5979436,13,Albright Ave,,Etobicoke,,,,,c74a6588e96bf6e0
+-79.5445665,43.597969,11,Albright Ave,,Etobicoke,,,,,463e186e5b50ff4c
+-79.5394177,43.5880619,1,Fortieth St,,Etobicoke,,,,,f8351c7c4c7e644b
+-79.5394885,43.5882068,3,Fortieth St,,Etobicoke,,,,,2407b3108cf813dc
+-79.5393101,43.5877812,390,Lake Promenade,,Etobicoke,,,,,1a7ad87ed6fb47cc
+-79.5392229,43.5879243,384,Lake Promenade,,Etobicoke,,,,,aceea9e8eac03923
+-79.5391099,43.5879859,382,Lake Promenade,,Etobicoke,,,,,444d99c9df46ba6f
+-79.5390299,43.588029,380,Lake Promenade,,Etobicoke,,,,,cf5da83f590e2794
+-79.5415356,43.590628,13,Villa Rd,,Etobicoke,,,,,28c2c1cecf68962d
+-79.5412864,43.5906878,5,Villa Rd,,Etobicoke,,,,,8fe43f209365c980
+-79.5408351,43.5884986,18A,Hilo Rd,,Etobicoke,,,,,cc3a863b5e926316
+-79.5409047,43.5885491,18,Hilo Rd,,Etobicoke,,,,,2fbeef995aa24c06
+-79.5407309,43.5885649,16,Hilo Rd,,Etobicoke,,,,,01914d8a247fc621
+-79.5405562,43.5886167,6,Hilo Rd,,Etobicoke,,,,,0330769e24c96ff6
+-79.5399886,43.5883338,1,Hilo Rd,,Etobicoke,,,,,f595917ec8a02438
+-79.5403674,43.5886672,4,Hilo Rd,,Etobicoke,,,,,0f58ce4419eca988
+-79.5424134,43.5917196,16,Branch Ave,,Etobicoke,,,,,93c45f376c3dcace
+-79.5428165,43.592006,3823,Lake Shore Blvd W,,Etobicoke,,,,,c223d546255b0453
+-79.542765,43.5919917,3821A,Lake Shore Blvd W,,Etobicoke,,,,,50e56c00934b00ef
+-79.5426923,43.5920149,3819A,Lake Shore Blvd W,,Etobicoke,,,,,fee7f35942fcaf27
+-79.5427589,43.5920346,3821,Lake Shore Blvd W,,Etobicoke,,,,,c28867ca406e50a3
+-79.5426998,43.5920567,3819,Lake Shore Blvd W,,Etobicoke,,,,,21bd72202ce1ee48
+-79.5421307,43.5908662,22,Villa Rd,,Etobicoke,,,,,eff6f296141641e5
+-79.5419795,43.5908921,18,Villa Rd,,Etobicoke,,,,,d14e26029372d8d8
+-79.5418252,43.5909468,14,Villa Rd,,Etobicoke,,,,,b9c77dc5dc21d904
+-79.5417252,43.5909816,12,Villa Rd,,Etobicoke,,,,,f0640e96c6688e9d
+-79.5410485,43.5915727,103,Fortieth St,,Etobicoke,,,,,76d261827633dd3a
+-79.5406224,43.5920118,92,Thirty Ninth St,,Etobicoke,,,,,e595d77518ffcb11
+-79.5405831,43.5921014,94,Thirty Ninth St,,Etobicoke,,,,,ef015d8f0204f49f
+-79.5402816,43.5915876,80,Thirty Ninth St,,Etobicoke,,,,,cc521a569cb11ff6
+-79.5403578,43.5916843,82,Thirty Ninth St,,Etobicoke,,,,,21a954af8bf07ad8
+-79.5403942,43.5917803,84,Thirty Ninth St,,Etobicoke,,,,,615248d20a163040
+-79.5383566,43.5899301,28,Thirty Eighth St,,Etobicoke,,,,,3a475b2c54f8e0c2
+-79.5383294,43.5900288,30,Thirty Eighth St,,Etobicoke,,,,,19c1c23122472663
+-79.5383635,43.5901553,38,Thirty Eighth St,,Etobicoke,,,,,70530ae11f986645
+-79.5381389,43.5896885,20,Thirty Eighth St,,Etobicoke,,,,,a27f97eb34202195
+-79.5380936,43.5896226,18,Thirty Eighth St,,Etobicoke,,,,,42f599046a19ba88
+-79.5381991,43.589784,22,Thirty Eighth St,,Etobicoke,,,,,3f76b281f5e26789
+-79.5377082,43.5899332,25,Thirty Eighth St,,Etobicoke,,,,,93c75ae049de2395
+-79.5466768,43.5907815,12,Forty Third St,,Etobicoke,,,,,b9172a2eef82d13a
+-79.5461588,43.5902783,15,Forty Third St,,Etobicoke,,,,,b81808c524acfb2e
+-79.5446578,43.5894349,87,Forty Second St,,Etobicoke,,,,,4782ef5efd2b3ecd
+-79.5462347,43.5921881,23A,Enfield Ave,,Etobicoke,,,,,88019c09f7774aba
+-79.5466689,43.5924762,16,Enfield Ave,,Etobicoke,,,,,a4b99e6fdc4a3f7e
+-79.5465069,43.5925192,12,Enfield Ave,,Etobicoke,,,,,f57d1d273fcaf94e
+-79.5463189,43.5926068,2,Gort Ave,,Etobicoke,,,,,0dc7499a8ed8a431
+-79.5441088,43.5923219,46,Exmoor Dr,,Etobicoke,,,,,7fab9f20576116b6
+-79.5515226,43.5982374,17,Westleigh Cres,,Etobicoke,,,,,2c9f5d421b316e12
+-79.5513727,43.5982895,15,Westleigh Cres,,Etobicoke,,,,,78af60cc7b6101b2
+-79.5513122,43.5971992,37,Westleigh Cres,,Etobicoke,,,,,b92a7a38a6bc0df7
+-79.550797,43.5974989,9,Woodbury Pl,,Etobicoke,,,,,d4d9ee3ae8aa14d9
+-79.5509183,43.5975673,13,Woodbury Pl,,Etobicoke,,,,,575162ab88715bfd
+-79.5510404,43.597682,14,Woodbury Pl,,Etobicoke,,,,,7a825499c32dae78
+-79.5489492,43.5979424,61A,Woodbury Rd,,Etobicoke,,,,,921a6a228e4b41ea
+-79.548859,43.5979627,61,Woodbury Rd,,Etobicoke,,,,,4640897f6505eb95
+-79.5487688,43.597983,59A,Woodbury Rd,,Etobicoke,,,,,dceeb4669bf51fc4
+-79.5486787,43.5980033,59,Woodbury Rd,,Etobicoke,,,,,c1eed9912616588d
+-79.5485886,43.5980236,57A,Woodbury Rd,,Etobicoke,,,,,c05a5fb6caa4359c
+-79.5490682,43.5982964,62,Woodbury Rd,,Etobicoke,,,,,c495fdf8fe663008
+-79.5489614,43.5983645,60A,Woodbury Rd,,Etobicoke,,,,,0a798c9727f0624f
+-79.5453566,43.5935688,14,Foch Ave,,Etobicoke,,,,,7b3d1e1957316036
+-79.545559,43.5938127,41,Alcan Ave,,Etobicoke,,,,,4032833150db875d
+-79.5452749,43.595826,33,Jellicoe Ave,,Etobicoke,,,,,5ec1cdf4fd26e593
+-79.5448664,43.5952985,44,Lloyd George Ave,,Etobicoke,,,,,4849bd75ee8c5192
+-79.5448602,43.5953987,48,Lloyd George Ave,,Etobicoke,,,,,3b4b8847721bbf15
+-79.5450092,43.5955434,52,Lloyd George Ave,,Etobicoke,,,,,7b5df5fc34bfd424
+-79.5448884,43.5954642,48A,Lloyd George Ave,,Etobicoke,,,,,0a50e3bc90580d78
+-79.5449166,43.5955297,50,Lloyd George Ave,,Etobicoke,,,,,5d8bcb2ab2379987
+-79.5460758,43.5977025,35,Albright Ave,,Etobicoke,,,,,923c0a2da3dd142d
+-79.5459612,43.5976716,33,Albright Ave,,Etobicoke,,,,,110430dba20fb7ab
+-79.5458067,43.597699,31,Albright Ave,,Etobicoke,,,,,83ec16eef67f898a
+-79.5450639,43.5983435,16,Albright Ave,,Etobicoke,,,,,2c38affc66174cb3
+-79.5449022,43.5983811,14,Albright Ave,,Etobicoke,,,,,26b3a2aa2837e0c7
+-79.5447667,43.5984037,10,Albright Ave,,Etobicoke,,,,,602c3df844ad1175
+-79.5388913,43.5881185,376,Lake Promenade,,Etobicoke,,,,,cfe4ac8c3c0b606a
+-79.5387387,43.5874589,381,Lake Promenade,,Etobicoke,,,,,8910ea30b53b591a
+-79.5386496,43.5875568,379,Lake Promenade,,Etobicoke,,,,,2f706eb1d7aa2687
+-79.5385485,43.5876366,377,Lake Promenade,,Etobicoke,,,,,52e49809af2e6cb5
+-79.5387776,43.5882416,374,Lake Promenade,,Etobicoke,,,,,6885a9ca52431ec3
+-79.53822,43.5879025,369,Lake Promenade,,Etobicoke,,,,,e591d30f93713493
+-79.5402857,43.5888769,2,Hilo Rd,,Etobicoke,,,,,45a19b9787fedafd
+-79.5410682,43.5889563,17,Garden Pl,,Etobicoke,,,,,9fd788345888bb40
+-79.5409937,43.5889644,15,Garden Pl,,Etobicoke,,,,,05f93eb9b4aae28c
+-79.5408902,43.5889968,13,Garden Pl,,Etobicoke,,,,,81ec0631df4e7340
+-79.5408073,43.5890314,11,Garden Pl,,Etobicoke,,,,,1e96a1e011b42c1e
+-79.5405822,43.5890762,9,Garden Pl,,Etobicoke,,,,,1ed103fed19b7ad6
+-79.5410334,43.5893701,12,Garden Pl,,Etobicoke,,,,,1f360934db121087
+-79.5421747,43.5913474,15,Branch Ave,,Etobicoke,,,,,0fc263239219108e
+-79.5420483,43.5913959,13,Branch Ave,,Etobicoke,,,,,0d4a7ec0769f82e3
+-79.5418636,43.5914065,9,Branch Ave,,Etobicoke,,,,,7b46e5471b6067c9
+-79.5417404,43.5914613,7,Branch Ave,,Etobicoke,,,,,30aa173ce81c7ee6
+-79.5416138,43.5909801,10,Villa Rd,,Etobicoke,,,,,ef4fa0a988a23e1b
+-79.5414883,43.5910256,8,Villa Rd,,Etobicoke,,,,,96cbb8bdd217c177
+-79.5414402,43.5910583,6,Villa Rd,,Etobicoke,,,,,209ee76afba99d8a
+-79.5404345,43.5918558,86,Thirty Ninth St,,Etobicoke,,,,,1a44571d1c4510b0
+-79.5404632,43.5919377,90,Thirty Ninth St,,Etobicoke,,,,,2515f9844f444e5c
+-79.5395132,43.5908481,58,James St,,Etobicoke,,,,,a041131bd7304eb1
+-79.539424,43.5908621,56,James St,,Etobicoke,,,,,0dfddcf737561d2f
+-79.5395494,43.5911523,51,Thirty Ninth St,,Etobicoke,,,,,44d401cb0878f487
+-79.5396388,43.5912318,53,Thirty Ninth St,,Etobicoke,,,,,54ef1969f526e4b3
+-79.5396105,43.5913416,55,Thirty Ninth St,,Etobicoke,,,,,e3951619d0997300
+-79.5377822,43.5900252,27,Thirty Eighth St,,Etobicoke,,,,,05c63c1d952d8d46
+-79.5377688,43.5901567,29,Thirty Eighth St,,Etobicoke,,,,,9ce47205682262b9
+-79.5384236,43.5902594,40A,Thirty Eighth St,,Etobicoke,,,,,469681a957965b92
+-79.5384494,43.5903091,40B,Thirty Eighth St,,Etobicoke,,,,,a5a07d884b5cda0e
+-79.5384225,43.5903288,40,Thirty Eighth St,,Etobicoke,,,,,8b2f8ab3c77c9fb4
+-79.5384999,43.5904068,42,Thirty Eighth St,,Etobicoke,,,,,49f6c536301b8d2a
+-79.543417,43.5886442,55,Forty Second St,,Etobicoke,,,,,37577de489be0e21
+-79.544327,43.5892197,77A,Forty Second St,,Etobicoke,,,,,e93885cb36057459
+-79.544256,43.5891746,77,Forty Second St,,Etobicoke,,,,,56aa68e138a0afe9
+-79.5461518,43.5922248,23,Enfield Ave,,Etobicoke,,,,,b14da2caf1bcae88
+-79.5460791,43.5922796,21,Enfield Ave,,Etobicoke,,,,,0ddc43cdb84060df
+-79.5459674,43.5923262,19,Enfield Ave,,Etobicoke,,,,,04137b4feb842d8d
+-79.5458533,43.5923737,17,Enfield Ave,,Etobicoke,,,,,10f30653953498a0
+-79.5440322,43.5923751,44,Exmoor Dr,,Etobicoke,,,,,c2816202809267ea
+-79.5439355,43.5924309,42A,Exmoor Dr,,Etobicoke,,,,,f3603a1d2eccf1c5
+-79.5505982,43.5975234,7,Woodbury Pl,,Etobicoke,,,,,6fdc3090c77f2701
+-79.5504237,43.5975662,5,Woodbury Pl,,Etobicoke,,,,,11c66a9ca8cbbb62
+-79.5502348,43.5975692,3,Woodbury Pl,,Etobicoke,,,,,25fde5328286ca42
+-79.5510248,43.5978169,12,Woodbury Pl,,Etobicoke,,,,,853f3a917b63e13f
+-79.5509231,43.5979237,10,Woodbury Pl,,Etobicoke,,,,,9250b8b1714bb2a0
+-79.5507973,43.5980031,8,Woodbury Pl,,Etobicoke,,,,,cd2336075ec69ea3
+-79.5512356,43.5983238,11,Westleigh Cres,,Etobicoke,,,,,bcb703e9d59f9c37
+-79.5488544,43.5983886,60,Woodbury Rd,,Etobicoke,,,,,a7af3df156f623e8
+-79.5487563,43.5984104,58A,Woodbury Rd,,Etobicoke,,,,,432de8bdcd6d7e3b
+-79.5486662,43.5984307,58,Woodbury Rd,,Etobicoke,,,,,8caaa098c109a40e
+-79.5484973,43.5980443,57,Woodbury Rd,,Etobicoke,,,,,ad51ecf8811f60b9
+-79.5484069,43.5980643,55A,Woodbury Rd,,Etobicoke,,,,,8bb81e6d1b41aca8
+-79.548317,43.5980849,55,Woodbury Rd,,Etobicoke,,,,,e27f92dd0954ee85
+-79.5481801,43.598132,53,Woodbury Rd,,Etobicoke,,,,,364184106fac9e7d
+-79.545482,43.5937658,39,Alcan Ave,,Etobicoke,,,,,1b4d0e9e44c31eb5
+-79.5454178,43.5937925,37,Alcan Ave,,Etobicoke,,,,,a5827021a7f9b229
+-79.5448495,43.5934838,15,Foch Ave,,Etobicoke,,,,,1163d0644c3cfc02
+-79.544878,43.5935581,17,Foch Ave,,Etobicoke,,,,,35756f4293acc3af
+-79.5450861,43.5958385,31,Jellicoe Ave,,Etobicoke,,,,,728f96738259fa65
+-79.5450022,43.595866,29,Jellicoe Ave,,Etobicoke,,,,,92ba7d4d086b89c3
+-79.5440464,43.5948828,31,Lloyd George Ave,,Etobicoke,,,,,ee7c759619b2bcba
+-79.544069,43.5949731,33,Lloyd George Ave,,Etobicoke,,,,,0493565189c72134
+-79.5442378,43.5951644,35,Lloyd George Ave,,Etobicoke,,,,,1ececcae6e65500a
+-79.5441404,43.5952353,25,Dover Dr,,Etobicoke,,,,,130e1768c67385dd
+-79.5440753,43.5952253,23,Dover Dr,,Etobicoke,,,,,8058c25cb2412de5
+-79.5437787,43.5946396,18,Alcan Ave,,Etobicoke,,,,,39b94e51e9caeb38
+-79.5456998,43.5977223,29,Albright Ave,,Etobicoke,,,,,981f7c60b4ca3e47
+-79.5467084,43.5978874,83,Foch Ave,,Etobicoke,,,,,b5b56eac11655c4f
+-79.5467385,43.5979617,85,Foch Ave,,Etobicoke,,,,,8dbc1b999a2506ef
+-79.546765,43.5980328,87,Foch Ave,,Etobicoke,,,,,10f119f1f5866c0e
+-79.5467932,43.5981026,87A,Foch Ave,,Etobicoke,,,,,5b016aa7175d8049
+-79.5445135,43.5973058,16A,Owen Dr,,Etobicoke,,,,,2223ff159653a525
+-79.5444234,43.5973262,16,Owen Dr,,Etobicoke,,,,,46058682922294a1
+-79.5443084,43.5973714,14,Owen Dr,,Etobicoke,,,,,78759e7446dc0bf7
+-79.5442432,43.5973671,12,Owen Dr,,Etobicoke,,,,,0805b2665d383451

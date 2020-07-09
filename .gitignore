@@ -129,6 +129,7 @@ dmypy.json
 .pyre/
 
 # Dumps of Data
+!data/sample_of_toronto.csv.csv
 data/
 
 #unversioned files for intelliJ

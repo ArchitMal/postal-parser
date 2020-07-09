@@ -74,7 +74,28 @@ def zip_lists(cage_strings,word_hash):
 ##      zipped_lists:  output from zip_lists(), list of touples with the human string and the map of word->tag
 ##      return:     returns finished string of all items to be written to file
 ##      eg output:  "DOCTYPPE -X- -X- -0-\n3a NPP NPP B-Unit\nMain NPP NPP B-Street\nSt. NPP NPP I-Street ... "
-def to_CONLL(zipped_lists):
+
+def tokenize(address_str):
+    '''Takes the address str and outputs list of ordered tokens in the address'''
+    
+    clean_add = address.str.replace(',', "")
+    tokens_list = clean_add.split(' ')
+    return tokens_list
+
+def NER_tags(address_dict):
+    '''Takes the address dict of form {token:tag} and outputs a dict of form {token:BIO tag}'''
+    NER ={}
+    for key in address_dict:
+        tokens = key.split(" ")
+        for i in range(len(tokens)):
+            if i == 0:
+                NER[tokens[i]] = 'B-' + address_dict[key]
+            else:
+                NER[tokens[i]] = 'I-' + address_dict[key]
+    return NER
+
+###ADD POS tagging formula here ###
+def POS_tags(zipped_lists):
     pass
 
 
@@ -85,15 +106,31 @@ def to_CONLL(zipped_lists):
 ##      FILE_NAME:  root file location
 ##      return:     n/a
 ##      eg output:  complete CONLL file
-def write_CONLL_file(CONLL_string):
-    pass
 
+def write_CONLL_file(zipped_lists):
+    '''Takes zipped addresses and writes a CoNLL format file '''
+    
+    file = open(OutDIR, "w+")
+    for address in zipped_list:
+        add_str, add_dict = address
+        tokens = tokenize(add_str)
+        tags = NER_tags(add_dict)
+        pos = len(tokens)*['NA'] # change to pos tagging formula here
+        i = 0
+        file.write('-DOCSTART- -X- -X- O \n')
+        for token in tokens:
+        file.write('{} {} {} {} \n'.format(token, pos[i], pos[i], tags[token]))
+    
+        file.write('\n')
+    file.close()
 
 #Just so you all can see the logic
+
+OutDIR = 'CoNLL_addresses.txt'
+
 def main():
     csv_dict = read_csv(FILE_NAME)
     word_hash = dict_to_hash(csv_dict)
     cage_strings = run_open_cage(csv_dict)
     zipped_lists = zip_lists(cage_strings, word_hash)
-    final_string = to_CONLL(zipped_lists)
-    write_CONLL_file(final_string)
+    write_CONLL_file(zipped_lists)

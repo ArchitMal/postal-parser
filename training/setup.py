@@ -1,6 +1,6 @@
 
 # Archi & Ian
-FILE_NAME = 'sample/root/data/locationn
+FILE_NAME = '../data/sample_of_toronto.csv'
 
 """
 Example of .csv file:

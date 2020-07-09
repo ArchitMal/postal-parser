@@ -74,7 +74,7 @@ def zip_lists(cage_strings,word_hash):
 ##      zipped_lists:  output from zip_lists(), list of touples with the human string and the map of word->tag
 ##      return:     returns finished string of all items to be written to file
 ##      eg output:  "DOCTYPPE -X- -X- -0-\n3a NPP NPP B-Unit\nMain NPP NPP B-Street\nSt. NPP NPP I-Street ... "
-
+import nltk
 def tokenize(address_str):
     '''Takes the address str and outputs list of ordered tokens in the address'''
     
@@ -95,10 +95,10 @@ def NER_tags(address_dict):
     return NER
 
 ###ADD POS tagging formula here ###
-def POS_tags(zipped_lists):
-    for item in zipped_lists:
+def POS_tags(address_dict):
+    
         
-        keys=list(item[1].keys())
+        keys=list(address_dict.keys())
         
         tagged.append(nltk.pos_tag(keys))
     return tagged
@@ -121,7 +121,7 @@ def write_CONLL_file(zipped_lists):
         add_str, add_dict = address
         tokens = tokenize(add_str)
         tags = NER_tags(add_dict)
-        pos = len(tokens)*['NA'] # change to pos tagging formula here
+        pos = POS_tags(add_dict) # change to pos tagging formula here
         i = 0
         file.write('-DOCSTART- -X- -X- O \n')
         for token in tokens:

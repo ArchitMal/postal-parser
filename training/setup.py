@@ -31,7 +31,8 @@ def read_csv(root_location):
 #   return: dict mapping entity to its relating tag.
 #   eg output:  [{'3a': 'houseNumber', 'Main' : 'road', 'St.' : 'road' ....}, {...}, ... ]
 def dict_to_hash(csv_dict)
-    pass
+    csv_dict_flipped = {value:key for key, value in csv_dict.items()}
+    return csv_dict_flipped
     
     
     

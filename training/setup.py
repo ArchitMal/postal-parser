@@ -1,6 +1,7 @@
 
 # Archi & Ian
 FILE_NAME = '../data/sample_of_toronto.csv'
+OUT_FILE_NAME = 'CoNLL_addresses.txt'
 
 """
 Example of .csv file:
@@ -116,7 +117,7 @@ def POS_tags(address_dict):
 def write_CONLL_file(zipped_lists):
     '''Takes zipped addresses and writes a CoNLL format file '''
     
-    file = open(OutDIR, "w+")
+    file = open(OUT_FILE_NAME, "w+")
     for address in zipped_list:
         add_str, add_dict = address
         tokens = tokenize(add_str)
@@ -131,8 +132,6 @@ def write_CONLL_file(zipped_lists):
     file.close()
 
 #Just so you all can see the logic
-
-OutDIR = 'CoNLL_addresses.txt'
 
 def main():
     csv_dict = read_csv(FILE_NAME)

@@ -27,6 +27,7 @@ LON,    LAT,    NUMBER, STREET,     UNIT,   CITY,       DISTRICT,   REGION, POST
 
 
 def read_all_csvs(root_location, delimiter=','):
+    # parses through all csv's from the root data folder location
     dir_contents = next(os.walk(root_location))
     sub_directories = dir_contents[1]
 
@@ -63,10 +64,6 @@ def read_csv(file_location, delimiter, country=''):
             out_list.append(line)
     return out_list
 
-
-f = read_all_csvs('testdata', '\t')
-for line in f:
-    print(line)
 
 #   Owner: Archi & Ian
 #   description: takes the dict and flips it around so that the words point to their tag rather than vice verca.

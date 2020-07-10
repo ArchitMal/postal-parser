@@ -1,7 +1,9 @@
+import csv
+import os
 
-# Archi & Ian
-FILE_NAME = '../data/sample_of_toronto.csv'
+FILE_NAME = 'test.csv'
 OUT_FILE_NAME = '../data/CoNLL_addresses.txt'
+COUNTRY_FILE_NAME = 'countrywide.csv'
 
 """
 Example of .csv file:
@@ -13,40 +15,80 @@ LON,    LAT,    NUMBER, STREET,     UNIT,   CITY,       DISTRICT,   REGION, POST
 (csv files are separated into country folders, so that will be added in afterwards)
 """
 
-#///////////////////////////////////////////////////////////////////////////////////////
+# ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 1
 #   Owner: Archi & Ian
 #   description: takes root data location and processes data into dictionary
 #
 #   Parameters
-##      FILE_NAME:  root file location
-##      return:     returns list of dictionaries with keys matching opencage
-##      eg output:  [{'houseNumber': '3a', 'road': 'Main St.', 'neighborhood': '', 'city': 'Toronto', 'county':...]
-def read_csv(root_location):
-    pass
-    
+#      FILE_NAME:  root file location
+#      return:     returns list of dictionaries with keys matching opencage
+#      eg output:  [{'houseNumber': '3a', 'road': 'Main St.', 'neighborhood': '', 'city': 'Toronto', 'county':...]
+
+
+def read_all_csvs(root_location, delimiter=','):
+    dir_contents = next(os.walk(root_location))
+    sub_directories = dir_contents[1]
+
+    all_addresses = []
+    for sub_dir in sub_directories:
+        folder_name = root_location + '/' + sub_dir
+        country_addresses = parse_country_dir(folder_name, sub_dir, delimiter)
+        all_addresses += country_addresses
+    return all_addresses
+
+
+def parse_country_dir(folder_location, country_name, delimiter):
+    # walks through the country folders, looks for countrywide.csv and calls read_csv() on it
+    country_file_name = COUNTRY_FILE_NAME
+    dir_contents = next(os.walk(folder_location))
+    files = dir_contents[2]
+
+    if country_file_name in files:
+        file_name = folder_location + '/' + country_file_name
+        out_list = read_csv(file_name, delimiter, country_name)
+        return out_list
+    return []
+
+
+def read_csv(file_location, delimiter, country=''):
+    # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
+    out_list = []
+    with open(file_location, newline='') as file:
+        reader = csv.reader(file, delimiter=delimiter)
+        headers = next(reader)
+        for row in reader:
+            line = [{'label': headers[i], 'value':row[i]} for i in range(len(row))]
+            line.append({'label': 'Country', 'value': country})
+            out_list.append(line)
+    return out_list
+
+
+f = read_all_csvs('testdata', '\t')
+for line in f:
+    print(line)
 
 #   Owner: Archi & Ian
-#   description: basically takes the dict and flips it around so that the words point to their tag rather than vice verca.
+#   description: takes the dict and flips it around so that the words point to their tag rather than vice verca.
 #   Adding in because Archi and Ian got worried about runtime
 #   return: dict mapping entity to its relating tag.
 #   eg output:  [{'3a': 'houseNumber', 'Main' : 'road', 'St.' : 'road' ....}, {...}, ... ]
-def dict_to_hash(csv_dict)
+def dict_to_hash(csv_dict):
     csv_dict_flipped = {value:key for key, value in csv_dict.items()}
     return csv_dict_flipped
     
     
     
     
-#///////////////////////////////////////////////////////////////////////////////////////
+# ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 2
 #   Owner: Archi & Ian
-#   description: takes the dict and enters it into OpenCage to generate the overall sentance as would be entered by human
-#
+#   description: takes the dict and enters it into OpenCage to generate the sentence as would be entered by human
+
 #   Parameters
-##      csv_dict:   the dictionary created by read_csv()
-##      return:     returns list of opencage generated strings
-##      eg output:  ["52 Main St., Unit 3a, Toronto, ON, N6C 4E9","9 South St., Rio BR, 12345",...]
+#      csv_dict:   the dictionary created by read_csv()
+#      return:     returns list of opencage generated strings
+#      eg output:  ["52 Main St., Unit 3a, Toronto, ON, N6C 4E9","9 South St., Rio BR, 12345",...]
 def run_open_cage(csv_dict):
     pass
     
@@ -79,7 +121,7 @@ import nltk
 def tokenize(address_str):
     '''Takes the address str and outputs list of ordered tokens in the address'''
     
-    clean_add = address_str.replace(',', "")
+    clean_add = address_str.replace(',', " ")
     tokens_list = clean_add.split(' ')
     
     return tokens_list
@@ -88,7 +130,6 @@ def NER_tags(address_dict, address_str):
     '''Takes the address dict of form {token:tag} and outputs a dict of form {token:BIO tag}'''
     NER ={}
     for key in address_dict:
-        
         tokens = key.split(" ")
         for i in range(len(tokens)):
             if i == 0:
@@ -105,12 +146,8 @@ def NER_tags(address_dict, address_str):
 ###ADD POS tagging formula here ###
 def POS_tags(tokens):
     
-        
-        
-        
-        tagged=nltk.pos_tag(tokens)
-        
-        return dict(tagged)
+    tagged=nltk.pos_tag(tokens)
+    return dict(tagged)
 
 #   Owner: Mona & Saira
 #   description: just writes the output of the above to a file
@@ -135,7 +172,7 @@ def write_CONLL_file(zipped_lists):
         for token in tokens: 
             print()
         for token in tokens:
-         file.write('{} {} {} {} \n'.format(token, pos[token], pos[token], tags[token]))
+            file.write('{} {} {} {} \n'.format(token, pos[token], pos[token], tags[token]))
         
         file.write('\n')
     file.close()

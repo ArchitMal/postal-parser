@@ -1,19 +1,21 @@
 import csv
 import os
+import nltk
 
-FILE_NAME = 'test.csv'
+ROOT_FOLDER_NAME = '../../structured_data/testdata'
 OUT_FILE_NAME = '../data/CoNLL_addresses.txt'
 COUNTRY_FILE_NAME = 'countrywide.csv'
-
-"""
-Example of .csv file:
-
-LON,    LAT,    NUMBER, STREET,     UNIT,   CITY,       DISTRICT,   REGION, POSTCODE,   ID, HASH
--49.41, 29.523, 52,     Main St.,   3a,     Toronto,    ,           ON,     N6C4E9,     ,   529a2b19a...
--50.1,  -23.1,  9,      South St.,  ,       Rio,        ,           BR,     12345,      ,   21203asf124...
-
-(csv files are separated into country folders, so that will be added in afterwards)
-"""
+OA_TO_LIBPOSTAL = {'LAT': '',
+                   'LON': '',
+                   'NUMBER': 'house_number',
+                   'STREET': 'road',
+                   'UNIT': 'unit',
+                   'CITY': 'city',
+                   'DISTRICT': 'state_district',
+                   'REGION': 'state',
+                   'POSTCODE': 'postcode',
+                   'ID': '',
+                   'HASH': ''}
 
 # ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 1
@@ -26,56 +28,50 @@ LON,    LAT,    NUMBER, STREET,     UNIT,   CITY,       DISTRICT,   REGION, POST
 #      eg output:  [{'houseNumber': '3a', 'road': 'Main St.', 'neighborhood': '', 'city': 'Toronto', 'county':...]
 
 
-def read_all_csvs(root_location, delimiter=','):
-    # parses through all csv's from the root data folder location
+def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
+    # really gross recursive function that goes through all files and subfolders
+    # then processes each csv into the list of dictionaries
+
     dir_contents = next(os.walk(root_location))
     sub_directories = dir_contents[1]
+    files = dir_contents[2]
 
+    #TODO: Fix Level_labels to reflect the actual relevant label
+    level_labels = ['country', 'state', 'state_district','city','city_district']
+
+    # RECURSIVE STATE: parse through all sub-directories recursively
     all_addresses = []
     for sub_dir in sub_directories:
         folder_name = root_location + '/' + sub_dir
-        country_addresses = parse_country_dir(folder_name, sub_dir, delimiter)
-        all_addresses += country_addresses
+        label = OA_TO_LIBPOSTAL[level_labels[level]]
+        parents = parent_info +[{'label': label, 'value': sub_dir}]
+        folder_addresses = parse_dir(folder_name, delimiter=delimiter, level=level+1,parent_info=parents)
+        all_addresses += folder_addresses
+
+    # BASE CASE: parse through all files in directory
+    for file in files:
+        if len(file) > 3 and file[-4:] == '.csv':
+            file_location = root_location + '/' + file
+            label = OA_TO_LIBPOSTAL[level_labels[level]]
+            parents = parent_info + [{'label': label, 'value': file[:-4]}]
+            file_addresses = read_csv(file_location, delimiter, parent_info=parents)
+            all_addresses += file_addresses
     return all_addresses
 
 
-def parse_country_dir(folder_location, country_name, delimiter):
-    # walks through the country folders, looks for countrywide.csv and calls read_csv() on it
-    country_file_name = COUNTRY_FILE_NAME
-    dir_contents = next(os.walk(folder_location))
-    files = dir_contents[2]
-
-    if country_file_name in files:
-        file_name = folder_location + '/' + country_file_name
-        out_list = read_csv(file_name, delimiter, country_name)
-        return out_list
-    return []
-
-
-def read_csv(file_location, delimiter, country=''):
+def read_csv(file_location, delimiter, parent_info=[]):
     # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
+    # TODO: how to assign values from parent_info alreaady in headers (eg. state/region)
     out_list = []
     with open(file_location, newline='') as file:
         reader = csv.reader(file, delimiter=delimiter)
         headers = next(reader)
         for row in reader:
-            line = [{'label': headers[i], 'value':row[i]} for i in range(len(row))]
-            line.append({'label': 'Country', 'value': country})
+            line = [{'label': OA_TO_LIBPOSTAL[headers[i]], 'value':row[i]} for i in range(len(row))]
+            [line.append(parent) for parent in parent_info]
             out_list.append(line)
     return out_list
 
-
-#   Owner: Archi & Ian
-#   description: takes the dict and flips it around so that the words point to their tag rather than vice verca.
-#   Adding in because Archi and Ian got worried about runtime
-#   return: dict mapping entity to its relating tag.
-#   eg output:  [{'3a': 'houseNumber', 'Main' : 'road', 'St.' : 'road' ....}, {...}, ... ]
-def dict_to_hash(csv_dict):
-    csv_dict_flipped = {value:key for key, value in csv_dict.items()}
-    return csv_dict_flipped
-    
-    
-    
     
 # ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 2
@@ -88,22 +84,7 @@ def dict_to_hash(csv_dict):
 #      eg output:  ["52 Main St., Unit 3a, Toronto, ON, N6C 4E9","9 South St., Rio BR, 12345",...]
 def run_open_cage(csv_dict):
     pass
-    
-#   Owner: Archi & Ian
-#   description: literally runs numpy.zip on the lists generated by run_open_cage() and dict_to_hash(), turning them into a (using Java notation, sorry) List<Touple<String, Dict<String, String>>>
-#
-#   Parameters
-##      cage_strings:   output from run_open_cage() containing the list of all the strings
-##      word_hash:      output from dict_to_hash(), containing the list of all of the dictionaries for each string
-##      return:         returns one list with touples containing the elements from cage_strings and word_hash with matching indicies
-##      eg output:  [("52 Main St., Unit 3a, Toronto, ON, N6C 4E9", {'3a': 'houseNumber', 'Main' : 'road', 'St.' : 'road' ....}),
-#                    ("9 South St., Rio BR, 12345",{...}),
-#                        ...]
-def zip_lists(cage_strings,word_hash):
-    pass
-    
-    
-    
+
     
 #///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 3
@@ -114,7 +95,6 @@ def zip_lists(cage_strings,word_hash):
 ##      zipped_lists:  output from zip_lists(), list of touples with the human string and the map of word->tag
 ##      return:     returns finished string of all items to be written to file
 ##      eg output:  "DOCTYPPE -X- -X- -0-\n3a NPP NPP B-Unit\nMain NPP NPP B-Street\nSt. NPP NPP I-Street ... "
-import nltk
 def tokenize(address_str):
     '''Takes the address str and outputs list of ordered tokens in the address'''
     
@@ -179,8 +159,6 @@ def write_CONLL_file(zipped_lists):
 #Just so you all can see the logic
 
 def main():
-    csv_dict = read_csv(FILE_NAME)
-    word_hash = dict_to_hash(csv_dict)
-    cage_strings = run_open_cage(csv_dict)
-    zipped_lists = zip_lists(cage_strings, word_hash)
-    write_CONLL_file(zipped_lists)
+    csv_dicts = parse_dir(ROOT_FOLDER_NAME)
+    cage_dicts = run_open_cage(csv_dicts)
+    write_CONLL_file(cage_dicts)

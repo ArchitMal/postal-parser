@@ -71,13 +71,14 @@ def read_csv(file_location, delimiter, parent_info=[]):
         reader = csv.reader(file, delimiter=delimiter)
         headers = next(reader)
         for row in reader:
-            line = [{'label': OA_TO_LIBPOSTAL[headers[i]], 'value':row[i]} for i in range(len(row))]
+            line = []
+            for i in range(len(row)):
+                label = OA_TO_LIBPOSTAL[headers[i]]
+                value = row[i]
+                if value and label:
+                    line.append({'label': label, 'value': value})
             for parent in parent_info:
-                if parent['label'] == 'state':
-                    line[7] = parent    #watch this hardcode, pulls the column which has province/region in it
-                else:
-                    line.append(parent)
-
+                line.append(parent)
             out_list.append(line)
     return out_list
 
@@ -190,9 +191,9 @@ def tokenize(address):
 
 ###ADD POS tagging formula here ###
 def POS_tags(tokens):
-        tagged=nltk.pos_tag(tokens)
-                
-        return tagged
+     tagged= nltk.pos_tag(tokens)
+
+     return tagged
 
 #   Owner: Mona & Saira
 #   description: just writes the output of the above to a file
@@ -208,16 +209,20 @@ def to_CoNLL(address):
     pos = POS_tags(tokens)
     conll=''
     for i in range(len(tokens)):
-        conll =conll+ '{} {} {} {} \n'.format(tokens[i], pos[i][1], pos[i][1], tags[tokens[i]])
+        token_val = tokens[i]
+        pos_val = pos[i][1]
+        tag_val = tags[token_val]
+        conll =conll+ '{} {} {} {} \n'.format(token_val, pos_val, pos_val, tag_val)
     return conll
 
 def write_CONLL_file(all_lines):
     file = open(OUT_FILE_NAME, 'w+')
-    conll = '-DOCSTART- -X- -X- O \n'
+    conll = '-DOCSTART- -X- -X- O\n\n'
     file.write(conll)
     for address in all_lines:
         file.write(to_CoNLL(address))
         file.write('\n')
+        file.write(conll)
     file.close()
 
 

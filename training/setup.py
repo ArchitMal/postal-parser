@@ -11,12 +11,11 @@ OA_TO_LIBPOSTAL = {'LAT': '',
                    'STREET': 'road',
                    'UNIT': 'unit',
                    'CITY': 'city',
-                   'DISTRICT': 'state_district',
+                   'DISTRICT': '',
                    'REGION': 'state',
                    'POSTCODE': 'postcode',
                    'ID': '',
                    'HASH': ''}
-
 # ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 1
 #   Owner: Archi & Ian
@@ -37,13 +36,13 @@ def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
     files = dir_contents[2]
 
     #TODO: Fix Level_labels to reflect the actual relevant label
-    level_labels = ['country', 'state', 'state_district','city','city_district']
+    level_labels = ['country', 'state', 'city']
 
     # RECURSIVE STATE: parse through all sub-directories recursively
     all_addresses = []
     for sub_dir in sub_directories:
         folder_name = root_location + '/' + sub_dir
-        label = OA_TO_LIBPOSTAL[level_labels[level]]
+        label = level_labels[level]
         parents = parent_info +[{'label': label, 'value': sub_dir}]
         folder_addresses = parse_dir(folder_name, delimiter=delimiter, level=level+1,parent_info=parents)
         all_addresses += folder_addresses
@@ -52,12 +51,18 @@ def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
     for file in files:
         if len(file) > 3 and file[-4:] == '.csv':
             file_location = root_location + '/' + file
-            label = OA_TO_LIBPOSTAL[level_labels[level]]
-            parents = parent_info + [{'label': label, 'value': file[:-4]}]
+            label = level_labels[level]
+            parents = parent_info + get_info_from_file_name(label,file)
             file_addresses = read_csv(file_location, delimiter, parent_info=parents)
             all_addresses += file_addresses
     return all_addresses
 
+def get_info_from_file_name(label, file_name):
+    # Takes in a .csv filename and pulls out the relevent inormation for the address if there is any
+    clean_file_name = file_name.replace('.csv','').replace('city_of_','').replace('municipality_of_','')
+    if clean_file_name == 'countrywide' or clean_file_name == 'statewide':
+        return []
+    return [{'label': label, 'value': clean_file_name}]
 
 def read_csv(file_location, delimiter, parent_info=[]):
     # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
@@ -68,10 +73,14 @@ def read_csv(file_location, delimiter, parent_info=[]):
         headers = next(reader)
         for row in reader:
             line = [{'label': OA_TO_LIBPOSTAL[headers[i]], 'value':row[i]} for i in range(len(row))]
-            [line.append(parent) for parent in parent_info]
+            for parent in parent_info:
+                if parent['label'] == 'state':
+                    line[7] = parent    #watch this hardcode, pulls the column which has province/region in it
+                else:
+                    line.append(parent)
+
             out_list.append(line)
     return out_list
-
 
     
 # ///////////////////////////////////////////////////////////////////////////////////////

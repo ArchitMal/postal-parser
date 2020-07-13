@@ -72,6 +72,7 @@ def read_csv(file_location, delimiter, parent_info=[]):
             out_list.append(line)
     return out_list
 
+
     
 # ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 2
@@ -80,11 +81,75 @@ def read_csv(file_location, delimiter, parent_info=[]):
 
 #   Parameters
 #      csv_dict:   the dictionary created by read_csv()
-#      return:     returns list of opencage generated strings
-#      eg output:  ["52 Main St., Unit 3a, Toronto, ON, N6C 4E9","9 South St., Rio BR, 12345",...]
+#      return:     returns opencage generated string
+#      eg output:  123 [house number] Main Street [road] Toronto [city] Ontario [state] M1V 3N2 [postcode] Canada [country]
 def run_open_cage(csv_dict):
-    pass
+    '''
+    Converts csv_dict, a list of dictionaries, into a readable address
+    string. For now, this keeps all pieces of information.
 
+    >>>sample = [{'value': '123','label':'house_number'},
+    {'value':'Main Street','label':'road'}]
+    >>>run_open_cage(sample)
+    123 [house_number] Main Street [road]
+
+    '''
+    address_string = ""
+
+    given_labels = ('house', 'level', 'unit', 'po_box', 'house_number',
+                    'road', 'near',  'city', 'suburb', 'city_district',
+                    'state_district', 'state', 'postcode',
+                    'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+
+    for i in range(len(given_labels)):
+        counter = 0
+        while counter < len(csv_dict):
+            if csv_dict[counter]['label'].lower() == given_labels[i]:
+                address_string = address_string + " " \
+                                 + csv_dict[counter]['value']\
+                                 + " [" + csv_dict[counter]['label'] + "]"
+                break
+            else:
+                counter += 1
+
+    return address_string.strip()
+
+#   Owner: Archi & Ian
+#   Description: Sorts csv_dict to create a list of dictionaries such that they are in the same order they would be in an address string written by a human.
+#   Parameters
+##      csv_dict:   the dictionary created by read_csv()
+##      return:     returns sorted list of csv_dict according to label placement
+
+def address_sorter(csv_dict):
+    '''
+    Sorts csv_dict to create a list of dictionaries such that they are in the
+    same order they would be in an address string written by a human.
+
+    >>>sample = [{'value':'Main Street','label':'road'},
+    {'value': '123','label':'house_number'}]
+    >>>address_sorter(sample)
+    [{'value': '123', 'label': 'house_number'},
+     {'value': 'Main Street', 'label': 'road'}]
+
+    '''
+
+    address_list = []
+
+    given_labels = ('house', 'level', 'unit', 'po_box', 'house_number',
+                    'road', 'near', 'city', 'suburb', 'city_district',
+                    'state_district', 'state', 'postcode',
+                    'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+
+    for i in range(len(given_labels)):
+        counter = 0
+        while counter < len(csv_dict):
+            if csv_dict[counter]['label'].lower() == given_labels[i]:
+                address_list.append(csv_dict[counter])
+                break
+            else:
+                counter += 1
+
+    return address_list
     
 #///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 3

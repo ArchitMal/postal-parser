@@ -3,8 +3,7 @@ import os
 import nltk
 
 ROOT_FOLDER_NAME = '../../structured_data/testdata'
-OUT_FILE_NAME = '../data/CoNLL_addresses.txt'
-COUNTRY_FILE_NAME = 'countrywide.csv'
+OUT_FILE_NAME = '../data/test_CoNLL_addresses.txt'
 OA_TO_LIBPOSTAL = {'LAT': '',
                    'LON': '',
                    'NUMBER': 'house_number',
@@ -227,8 +226,7 @@ def write_CONLL_file(zipped_lists):
 #Just so you all can see the logic
 
 def main():
-    csv_dict = read_csv(FILE_NAME)
-    word_hash = dict_to_hash(csv_dict)
-    cage_strings = run_open_cage(csv_dict)
-    zipped_lists = zip_lists(cage_strings, word_hash)
-    write_CONLL_file(zipped_lists)
+    csv_dict = parse_dir(ROOT_FOLDER_NAME)
+    cage_strings = [run_open_cage(line) for line in csv_dict]
+    write_CONLL_file(cage_strings)
+main()

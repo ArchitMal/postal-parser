@@ -102,7 +102,7 @@ def run_open_cage(csv_dict):
     123 [house_number] Main Street [road]
 
     '''
-    address_string = ""
+    address_string = ''
 
     given_labels = ('house', 'level', 'unit', 'po_box', 'house_number',
                     'road', 'near',  'city', 'suburb', 'city_district',
@@ -184,14 +184,14 @@ def NER_tags(address):
 def tokenize(address):
     tokens = []
     for part in address:
-        tokens.append(part['value'].split(' '))
+        tokens= tokens + part['value'].split(' ')
     return tokens
 
 
 ###ADD POS tagging formula here ###
 def POS_tags(tokens):
         tagged=nltk.pos_tag(tokens)
-        
+                
         return tagged
 
 #   Owner: Mona & Saira
@@ -205,17 +205,17 @@ def POS_tags(tokens):
 def to_CoNLL(address):
     tokens = tokenize(address)
     tags = NER_tags(address)
-    pos =  POS_tags(tokens)
+    pos = POS_tags(tokens)
     conll=''
     for i in range(len(tokens)):
         conll =conll+ '{} {} {} {} \n'.format(tokens[i], pos[i][1], pos[i][1], tags[tokens[i]])
     return conll
 
-def write_CONLL_file(zipped_lists):
+def write_CONLL_file(all_lines):
     file = open(OUT_FILE_NAME, 'w+')
     conll = '-DOCSTART- -X- -X- O \n'
     file.write(conll)
-    for address in zipped_lists:
+    for address in all_lines:
         file.write(to_CoNLL(address))
         file.write('\n')
     file.close()
@@ -227,7 +227,7 @@ def write_CONLL_file(zipped_lists):
 
 def main():
     csv_dict = parse_dir(ROOT_FOLDER_NAME)
-    cage_strings = [run_open_cage(line) for line in csv_dict]
+    cage_strings = [address_sorter(line) for line in csv_dict]
     write_CONLL_file(cage_strings)
 
 main()

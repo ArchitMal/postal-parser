@@ -177,14 +177,14 @@ def NER_tags(address):
         for i in range(len(tokens)):
             if i == 0:
                 tags[tokens[i]] = 'B-' + part['label']
-        else:
-            tags[tokens[i]] = 'I-' + part['label']
+            else:
+                tags[tokens[i]] = 'I-' + part['label']
     return tags
 
 def tokenize(address):
     tokens = []
     for part in address:
-        tokens = tokens + part['value'].split(' ')
+        tokens.append(part['value'].split(' '))
     return tokens
 
 
@@ -229,4 +229,5 @@ def main():
     csv_dict = parse_dir(ROOT_FOLDER_NAME)
     cage_strings = [run_open_cage(line) for line in csv_dict]
     write_CONLL_file(cage_strings)
+
 main()

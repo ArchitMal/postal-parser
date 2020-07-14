@@ -23,23 +23,24 @@ class Address:
 
     #   Description: Sorts csv_dict to create a list of dictionaries such that they are in the same order they would be in an address string written by a human.
     #   Parameters
-    ##      order:
+    ##      order:      List of libpostal aattributes in the order which they should appear in the final string
     ##      return:     sorts the csv_dict according to label placement
-    def order_address(self, order):
+    def order_address(self):
         address_list = []
-        for i in range(len(order)):
+        for i in range(len(self.order)):
             counter = 0
             while counter < len(self.address_dict):
-                if self.address_dict[counter]['label'].lower() == order[i]:
+                if self.address_dict[counter]['label'].lower() == self.order[i]:
                     address_list.append(self.address_dict[counter])
                     break
                 else:
                     counter += 1
         self.address_dict = address_list
+        self.ordered = True
 
-    def to_conll(self, address):
-        tokens = self._tokenize(address)
-        tags = self._ner_tags(address)
+    def to_conll(self):
+        tokens = self._tokenize()
+        tags = self._ner_tags()
         pos = self._pos_tags(tokens)
         conll = ''
         for i in range(len(tokens)):
@@ -49,9 +50,9 @@ class Address:
             conll = conll + '{} {} {} {} \n'.format(token_val, pos_val, pos_val, tag_val)
         return conll
 
-    def _ner_tags(self, address):
+    def _ner_tags(self):
         tags = {}
-        for part in address:
+        for part in self.address_dict:
             value = part['value'].split(' ')
             tokens = []
             tokens = tokens + [word for word in value if word]
@@ -62,9 +63,9 @@ class Address:
                     tags[tokens[i]] = 'I-' + part['label']
         return tags
 
-    def _tokenize(self, address):
+    def _tokenize(self):
         tokens = []
-        for part in address:
+        for part in self.address_dict:
             value = part['value'].split(' ')
             tokens = tokens + [word for word in value if word]
         return tokens

@@ -2,8 +2,10 @@ import csv
 import os
 import nltk
 
-ROOT_FOLDER_NAME = '../../structured_data/openaddr-collected-global'
-OUT_FILE_NAME = '../data/CoNLL_addresses'
+from training.address import Address
+
+ROOT_FOLDER_NAME = '../../structured_data/testdata'
+OUT_FILE_NAME = '../data/DELETE_ME_PLS'
 OA_TO_LIBPOSTAL = {'LAT': '',
                    'LON': '',
                    'NUMBER': 'house_number',
@@ -87,165 +89,29 @@ def read_csv(file_location, delimiter, parent_info=[]):
                     line.append({'label': label, 'value': value})
             for parent in parent_info:
                 line.append(parent)
-            out_list.append(line)
+            out_list.append(Address(line))
     return out_list
 
-    
-# ///////////////////////////////////////////////////////////////////////////////////////
-#   STEP 2
-#   Owner: Archi & Ian
-#   description: takes the dict and enters it into OpenCage to generate the sentence as would be entered by human
-
-#   Parameters
-#      csv_dict:   the dictionary created by read_csv()
-#      return:     returns opencage generated string
-#      eg output:  123 [house number] Main Street [road] Toronto [city] Ontario [state] M1V 3N2 [postcode] Canada [country]
-def run_open_cage(csv_dict):
-    '''
-    Converts csv_dict, a list of dictionaries, into a readable address
-    string. For now, this keeps all pieces of information.
-
-    >>>sample = [{'value': '123','label':'house_number'},
-    {'value':'Main Street','label':'road'}]
-    >>>run_open_cage(sample)
-    123 [house_number] Main Street [road]
-
-    '''
-    address_string = ''
-
-    given_labels = ('house', 'level', 'unit', 'po_box', 'house_number',
-                    'road', 'near',  'city', 'suburb', 'city_district',
-                    'state_district', 'state', 'postcode',
-                    'country_region', 'country', 'lon', 'lat', 'id', 'hash')
-
-    for i in range(len(given_labels)):
-        counter = 0
-        while counter < len(csv_dict):
-            if csv_dict[counter]['label'].lower() == given_labels[i]:
-                address_string = address_string + " " \
-                                 + csv_dict[counter]['value']\
-                                 + " [" + csv_dict[counter]['label'] + "]"
-                break
-            else:
-                counter += 1
-
-    return address_string.strip()
-
-#   Owner: Archi & Ian
-#   Description: Sorts csv_dict to create a list of dictionaries such that they are in the same order they would be in an address string written by a human.
-#   Parameters
-##      csv_dict:   the dictionary created by read_csv()
-##      return:     returns sorted list of csv_dict according to label placement
-
-def address_sorter(csv_dict):
-    '''
-    Sorts csv_dict to create a list of dictionaries such that they are in the
-    same order they would be in an address string written by a human.
-
-    >>>sample = [{'value':'Main Street','label':'road'},
-    {'value': '123','label':'house_number'}]
-    >>>address_sorter(sample)
-    [{'value': '123', 'label': 'house_number'},
-     {'value': 'Main Street', 'label': 'road'}]
-
-    '''
-
-    address_list = []
-
-    given_labels = ('house', 'level', 'unit', 'po_box', 'house_number',
-                    'road', 'near', 'city', 'suburb', 'city_district',
-                    'state_district', 'state', 'postcode',
-                    'country_region', 'country', 'lon', 'lat', 'id', 'hash')
-
-    for i in range(len(given_labels)):
-        counter = 0
-        while counter < len(csv_dict):
-            if csv_dict[counter]['label'].lower() == given_labels[i]:
-                address_list.append(csv_dict[counter])
-                break
-            else:
-                counter += 1
-
-    return address_list
-    
-#///////////////////////////////////////////////////////////////////////////////////////
-#   STEP 3
-#   Owner: Mona & Saira
-#   description: takes lists from zip_lists and for each cage string, looks at the hash of word->tag and assigns the correct tag to that word, formatting all into a string to be put into a file
-#
-#   Parameters
-##      zipped_lists:  output from zip_lists(), list of touples with the human string and the map of word->tag
-##      return:     returns finished string of all items to be written to file
-##      eg output:  "DOCTYPPE -X- -X- -0-\n3a NPP NPP B-Unit\nMain NPP NPP B-Street\nSt. NPP NPP I-Street ... "
-
-
-def NER_tags(address):
-    tags ={}
-    for part in address:
-        value = part['value'].split(' ')
-        tokens = []
-        tokens = tokens + [word for word in value if word]
-        for i in range(len(tokens)):
-            if i == 0:
-                tags[tokens[i]] = 'B-' + part['label']
-            else:
-                tags[tokens[i]] = 'I-' + part['label']
-    return tags
-
-def tokenize(address):
-    tokens = []
-    for part in address:
-        value = part['value'].split(' ')
-        tokens = tokens + [word for word in value if word]
-    return tokens
-
-
-###ADD POS tagging formula here ###
-def POS_tags(tokens):
-     tagged= nltk.pos_tag(tokens)
-
-     return tagged
-
-#   Owner: Mona & Saira
-#   description: just writes the output of the above to a file
-#
-#   Parameters
-##      FILE_NAME:  root file location
-##      return:     n/a
-##      eg output:  complete CONLL file
-
-def to_CoNLL(address):
-    tokens = tokenize(address)
-    tags = NER_tags(address)
-    pos = POS_tags(tokens)
-    conll=''
-    for i in range(len(tokens)):
-        token_val = tokens[i]
-        pos_val = pos[i][1]
-        tag_val = tags[token_val]
-        conll =conll+ '{} {} {} {} \n'.format(token_val, pos_val, pos_val, tag_val)
-    return conll
 
 def write_CONLL_file(all_lines,count):
     file = open(OUT_FILE_NAME+'_'+count+'.txt', 'w+')
     conll = '-DOCSTART- -X- -X- O\n\n'
     file.write(conll)
     for address in all_lines:
-        file.write(to_CoNLL(address))
+        file.write(address.to_conll())
         file.write('\n')
         file.write(conll)
     file.close()
-
 
 #Just so you all can see the logic
 
 def split(counter, folder_name, country):
     print('starting: ' + country)
-    csv_dict = parse_dir(folder_name, country)
+    all_addresses = parse_dir(folder_name, country)
     print('csvs loaded')
-    cage_strings = [address_sorter(line) for line in csv_dict]
+    [address.order_address() for address in all_addresses]
     print('lists organized')
-    write_CONLL_file(cage_strings,str(counter))
+    write_CONLL_file(all_addresses,str(counter))
     print('CoNLL written, done ' + country)
 
 
@@ -254,7 +120,7 @@ def main():
     sub_directories = dir_contents[1]
     counter = 0
     for sub_dir in sub_directories:
-        if counter > 2:
+        if counter < 17:
             folder_name = ROOT_FOLDER_NAME + '/' + sub_dir
             split(counter, folder_name, sub_dir)
         counter += 1

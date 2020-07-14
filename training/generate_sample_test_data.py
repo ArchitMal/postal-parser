@@ -1,7 +1,9 @@
 import csv
 import os
 from training.address import Address
-import pyspark.sql as spark
+from pyspark.sql import  *
+from pyspark.conf import SparkConf
+
 
 ROOT_FOLDER_NAME = '../../structured_data/testdata'
 OUT_FILE_NAME = '../data/sample_test_data.csv'
@@ -97,6 +99,11 @@ def write_csv(file_name, addresses):
         [file.write(str(address) + '\n') for address in addresses]
 
 def to_spark():
+    spark = SparkSession.builder.\
+        master('local').\
+        appName('Postal Parser').\
+        config(conf=SparkConf()).\
+        getOrCreate()
     spark.read.format('csv').options(header='true').load('../data/sample_test_data.csv')
 
 def main():
@@ -108,4 +115,5 @@ def main():
         csv_lists = parse_dir(directory,sub_dir)
         accum += csv_lists
     write_csv(OUT_FILE_NAME, accum)
+    to_spark()
 main()

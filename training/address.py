@@ -17,7 +17,7 @@ class Address:
             self.order_address(self.order)
         accum_string = ''
         for value in self.address_dict:
-            accum_string += value
+            accum_string += value['value']
             accum_string += ' '
         return accum_string.strip()
 

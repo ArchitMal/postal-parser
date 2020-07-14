@@ -100,4 +100,12 @@ def to_spark():
     spark.read.format('csv').options(header='true').load('../data/sample_test_data.csv')
 
 def main():
-    csv_lists = parse_dir(ROOT_FOLDER_NAME,)
+    dir_contents = next(os.walk(ROOT_FOLDER_NAME))
+    sub_directories = dir_contents[1]
+    accum = []
+    for sub_dir in sub_directories:
+        directory = ROOT_FOLDER_NAME+ '/'+sub_dir
+        csv_lists = parse_dir(directory,sub_dir)
+        accum += csv_lists
+    write_csv(OUT_FILE_NAME, accum)
+main()

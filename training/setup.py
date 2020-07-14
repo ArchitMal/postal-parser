@@ -2,8 +2,8 @@ import csv
 import os
 import nltk
 
-ROOT_FOLDER_NAME = '../../structured_data/testdata'
-OUT_FILE_NAME = '../data/test_CoNLL_addresses.txt'
+ROOT_FOLDER_NAME = '../../structured_data/openaddr-collected-global'
+OUT_FILE_NAME = '../data/CoNLL_addresses'
 OA_TO_LIBPOSTAL = {'LAT': '',
                    'LON': '',
                    'NUMBER': 'house_number',
@@ -25,8 +25,17 @@ OA_TO_LIBPOSTAL = {'LAT': '',
 #      return:     returns list of dictionaries with keys matching opencage
 #      eg output:  [{'houseNumber': '3a', 'road': 'Main St.', 'neighborhood': '', 'city': 'Toronto', 'county':...]
 
+def parse_dir(root_location, country, delimiter=','):
+    dir_contents = next(os.walk(root_location))
+    sub_directories = dir_contents[1]
 
-def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
+    label = 'country'
+    parents = [{'label': label, 'value': country}]
+
+    all_addresses = __parse_dir(root_location,delimiter,0,parents)
+    return all_addresses
+
+def __parse_dir(root_location, delimiter, level, parent_info):
     # really gross recursive function that goes through all files and subfolders
     # then processes each csv into the list of dictionaries
 
@@ -35,7 +44,7 @@ def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
     files = dir_contents[2]
 
     #TODO: Fix Level_labels to reflect the actual relevant label
-    level_labels = ['country', 'state', 'city']
+    level_labels = ['state', 'city']
 
     # RECURSIVE STATE: parse through all sub-directories recursively
     all_addresses = []
@@ -43,7 +52,7 @@ def parse_dir(root_location, delimiter=',', level=0, parent_info=[]):
         folder_name = root_location + '/' + sub_dir
         label = level_labels[level]
         parents = parent_info +[{'label': label, 'value': sub_dir}]
-        folder_addresses = parse_dir(folder_name, delimiter=delimiter, level=level+1,parent_info=parents)
+        folder_addresses = __parse_dir(folder_name, delimiter=delimiter, level=level+1,parent_info=parents)
         all_addresses += folder_addresses
 
     # BASE CASE: parse through all files in directory
@@ -65,7 +74,6 @@ def get_info_from_file_name(label, file_name):
 
 def read_csv(file_location, delimiter, parent_info=[]):
     # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
-    # TODO: how to assign values from parent_info alreaady in headers (eg. state/region)
     out_list = []
     with open(file_location, newline='') as file:
         reader = csv.reader(file, delimiter=delimiter)
@@ -174,7 +182,9 @@ def address_sorter(csv_dict):
 def NER_tags(address):
     tags ={}
     for part in address:
-        tokens = part['value'].split(' ')
+        value = part['value'].split(' ')
+        tokens = []
+        tokens = tokens + [word for word in value if word]
         for i in range(len(tokens)):
             if i == 0:
                 tags[tokens[i]] = 'B-' + part['label']
@@ -185,7 +195,8 @@ def NER_tags(address):
 def tokenize(address):
     tokens = []
     for part in address:
-        tokens= tokens + part['value'].split(' ')
+        value = part['value'].split(' ')
+        tokens = tokens + [word for word in value if word]
     return tokens
 
 
@@ -215,8 +226,8 @@ def to_CoNLL(address):
         conll =conll+ '{} {} {} {} \n'.format(token_val, pos_val, pos_val, tag_val)
     return conll
 
-def write_CONLL_file(all_lines):
-    file = open(OUT_FILE_NAME, 'w+')
+def write_CONLL_file(all_lines,count):
+    file = open(OUT_FILE_NAME+'_'+count+'.txt', 'w+')
     conll = '-DOCSTART- -X- -X- O\n\n'
     file.write(conll)
     for address in all_lines:
@@ -226,13 +237,28 @@ def write_CONLL_file(all_lines):
     file.close()
 
 
-
-
 #Just so you all can see the logic
 
-def main():
-    csv_dict = parse_dir(ROOT_FOLDER_NAME)
+def split(counter, folder_name, country):
+    print('starting: ' + country)
+    csv_dict = parse_dir(folder_name, country)
+    print('csvs loaded')
     cage_strings = [address_sorter(line) for line in csv_dict]
-    write_CONLL_file(cage_strings)
+    print('lists organized')
+    write_CONLL_file(cage_strings,str(counter))
+    print('CoNLL written, done ' + country)
+
+
+def main():
+    dir_contents = next(os.walk(ROOT_FOLDER_NAME))
+    sub_directories = dir_contents[1]
+    counter = 0
+    for sub_dir in sub_directories:
+        if counter > 2:
+            folder_name = ROOT_FOLDER_NAME + '/' + sub_dir
+            split(counter, folder_name, sub_dir)
+        counter += 1
 
 main()
+
+#todo: us,

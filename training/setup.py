@@ -4,8 +4,8 @@ import nltk
 
 from training.address import Address
 
-ROOT_FOLDER_NAME = '../../structured_data/testdata'
-OUT_FILE_NAME = '../data/DELETE_ME_PLS'
+ROOT_FOLDER_NAME = '../../structured_data/openaddr-collected-global'
+OUT_FILE_NAME = '../data/CoNLL_addresses'
 OA_TO_LIBPOSTAL = {'LAT': '',
                    'LON': '',
                    'NUMBER': 'house_number',
@@ -67,12 +67,14 @@ def __parse_dir(root_location, delimiter, level, parent_info):
             all_addresses += file_addresses
     return all_addresses
 
+
 def get_info_from_file_name(label, file_name):
     # Takes in a .csv filename and pulls out the relevent inormation for the address if there is any
     clean_file_name = file_name.replace('.csv','').replace('city_of_','').replace('municipality_of_','')
     if clean_file_name == 'countrywide' or clean_file_name == 'statewide':
         return []
     return [{'label': label, 'value': clean_file_name}]
+
 
 def read_csv(file_location, delimiter, parent_info=[]):
     # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
@@ -93,7 +95,7 @@ def read_csv(file_location, delimiter, parent_info=[]):
     return out_list
 
 
-def write_CONLL_file(all_lines,count):
+def write_conll_file(all_lines, count):
     file = open(OUT_FILE_NAME+'_'+count+'.txt', 'w+')
     conll = '-DOCSTART- -X- -X- O\n\n'
     file.write(conll)
@@ -103,15 +105,15 @@ def write_CONLL_file(all_lines,count):
         file.write(conll)
     file.close()
 
-#Just so you all can see the logic
 
 def split(counter, folder_name, country):
+    # Just so you all can see the logic
     print('starting: ' + country)
     all_addresses = parse_dir(folder_name, country)
     print('csvs loaded')
     [address.order_address() for address in all_addresses]
     print('lists organized')
-    write_CONLL_file(all_addresses,str(counter))
+    write_conll_file(all_addresses, str(counter))
     print('CoNLL written, done ' + country)
 
 
@@ -120,11 +122,12 @@ def main():
     sub_directories = dir_contents[1]
     counter = 0
     for sub_dir in sub_directories:
-        if counter < 17:
+        if counter > 26:
             folder_name = ROOT_FOLDER_NAME + '/' + sub_dir
             split(counter, folder_name, sub_dir)
         counter += 1
 
 main()
 
-#todo: us,
+#todo: 2:us, 3:ua, 6:be, 8:nz, kz, at,
+#fixed: no,  nno,  no,   yes,  no

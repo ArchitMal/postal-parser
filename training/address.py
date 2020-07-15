@@ -78,7 +78,7 @@ class Address:
           if r==3:
             new_order=add_delete_randomly_tags(add)
        self.order = new_order
-       return True
+       
       
       
     def to_conll(self):

@@ -5,7 +5,7 @@ GIVEN_LABELS = ('house', 'level', 'unit', 'po_box', 'house_number',
                 'road', 'near',  'city', 'suburb', 'city_district',
                 'state_district', 'state', 'postcode',
                 'country_region', 'country', 'lon', 'lat', 'id', 'hash')
-shuffle=True
+
 
 
 class Address:

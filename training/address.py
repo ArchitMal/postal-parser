@@ -1,9 +1,11 @@
 import nltk
 import re
+import random
 GIVEN_LABELS = ('house', 'level', 'unit', 'po_box', 'house_number',
                 'road', 'near',  'city', 'suburb', 'city_district',
                 'state_district', 'state', 'postcode',
                 'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+shuffle=True
 
 
 class Address:
@@ -46,17 +48,37 @@ class Address:
                     counter += 1
         self.address_dict = address_list
         self.ordered = True
-    
-    def make_randomized_order():
-       order = ('level', 'unit', 'po_box', 'house',
-                'road', 'near',  'city', 'suburb', 'city_district',
-                'state_district', 'state', 'postcode',
-                'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+        
+    @staticmethod 
+    def add_delete_randomly_tags(add):
+      if add is True:
+        #randomly duplicate one of tags
+        order= tuple([t[x] for x in range(1, random.randrange(1,15))])+GIVEN_LABELS
+        return order
+        
       
+    @staticmethod 
+    def make_randomized_order():
+       if shuffle is True:
+          order = tuple(random.sample(t, len(t)))
+       else:
+          r=random.randint(0,3)
+          if r==1:
+            order=('house_number','road', 'near',  'city', 'suburb', 'city_district',
+                  'state_district', 'state', 'postcode','house', 'level', 'unit', 'po_box',
+                  'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+          if r==2:
+            order=('house', 'house_number','po_box', 'road', 'near',  'city', 'suburb','house_number', 'city_district',
+                  'state_district', 'state', 'postcode', 'level', 'unit', ,
+                  'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+          if r==3:
+            add=True
+            order=add_delete_randomly_tags(add)
+       return order
       
     def change_default_order(self):
-       order=make_randomized_order()
-       self.order = order
+       new_order=make_randomized_order()
+       self.order = new_order
       
       
     def to_conll(self):

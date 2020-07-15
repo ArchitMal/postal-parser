@@ -91,7 +91,10 @@ def read_csv(file_location, delimiter, parent_info=[]):
                     line.append({'label': label, 'value': value})
             for parent in parent_info:
                 line.append(parent)
-            out_list.append(Address(line))
+            if random_var is True:    
+             out_list.append(Address(line))
+            else:
+              out_list.append(Address(line, change_default_order(False,False))
     return out_list
 
 

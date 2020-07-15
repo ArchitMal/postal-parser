@@ -5,7 +5,8 @@ import nltk
 from training.address import Address
 import random
 probability=0.8
-
+shuffle=False
+add=False
 
 ROOT_FOLDER_NAME = '../../structured_data/openaddr-collected-global'
 OUT_FILE_NAME = '../data/CoNLL_addresses'
@@ -100,7 +101,7 @@ def read_csv(file_location, delimiter, parent_info=[]):
             if decision(probability) is True:    
              out_list.append(Address(line))
             else:
-              out_list.append(Address(line, change_default_order(False,False))
+              out_list.append(Address(line, change_default_order(shuffle,add))
     return out_list
 
 

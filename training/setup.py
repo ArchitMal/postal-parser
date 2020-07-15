@@ -101,7 +101,7 @@ def read_csv(file_location, delimiter, parent_info=[]):
             if decision(probability) is True:    
              out_list.append(Address(line))
             else:
-              out_list.append(Address(line, change_default_order(shuffle,add))
+              out_list.append(Address(line, make_randomized_order(shuffle,add))
     return out_list
 
 

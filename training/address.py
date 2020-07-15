@@ -56,7 +56,7 @@ class Address:
         order= tuple([GIVEN_LABELS[x] for x in range(1, random.randrange(1,15))])+GIVEN_LABELS
       else:
         deleted_tags=[GIVEN_LABELS[x] for x in range(1, random.randrange(2,5))]
-        order = [x for x in GIVEN_LABELS if x not in deleted_tags]
+        order = tuple([x for x in GIVEN_LABELS if x not in deleted_tags])
       return order
         
       

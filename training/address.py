@@ -65,7 +65,7 @@ class Address:
        if shuffle is True:
           order = tuple(random.sample(t, len(t)))
        else:
-          r=random.randint(0,3)
+          r=random.randint(1,3)
           if r==1:
             order=('house_number','road', 'near',  'city', 'suburb', 'city_district',
                   'state_district', 'state', 'postcode','house', 'level', 'unit', 'po_box',

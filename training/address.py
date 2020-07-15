@@ -61,28 +61,24 @@ class Address:
       return order
         
       
-    @staticmethod 
-    def make_randomized_order(shuffle,add):
+  
+    def make_randomized_order(self,shuffle,add):
        if shuffle is True:
-          order = tuple(random.sample(t, len(t)))
+          new_order = tuple(random.sample(t, len(t)))
        else:
           r=random.randint(1,3)
           if r==1:
-            order=('house_number','road', 'near',  'city', 'suburb', 'city_district',
+            new_order=('house_number','road', 'near',  'city', 'suburb', 'city_district',
                   'state_district', 'state', 'postcode','house', 'level', 'unit', 'po_box',
                   'country_region', 'country', 'lon', 'lat', 'id', 'hash')
           if r==2:
-            order=('house', 'house_number','po_box', 'road', 'near',  'city', 'suburb','house_number', 'city_district',
+            new_order=('house', 'house_number','po_box', 'road', 'near',  'city', 'suburb','house_number', 'city_district',
                   'state_district', 'state', 'postcode', 'level', 'unit', ,
                   'country_region', 'country', 'lon', 'lat', 'id', 'hash')
           if r==3:
-            add=True
-            order=add_delete_randomly_tags(add)
-       return order
-      
-    def change_default_order(self,shuffle,add):
-       new_order=make_randomized_order(shuffle,add)
+            new_order=add_delete_randomly_tags(add)
        self.order = new_order
+       return True
       
       
     def to_conll(self):

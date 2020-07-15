@@ -61,7 +61,7 @@ class Address:
         
       
     @staticmethod 
-    def make_randomized_order():
+    def make_randomized_order(shuffle,add):
        if shuffle is True:
           order = tuple(random.sample(t, len(t)))
        else:
@@ -79,8 +79,8 @@ class Address:
             order=add_delete_randomly_tags(add)
        return order
       
-    def change_default_order(self):
-       new_order=make_randomized_order()
+    def change_default_order(self,shuffle,add):
+       new_order=make_randomized_order(shuffle,add)
        self.order = new_order
       
       

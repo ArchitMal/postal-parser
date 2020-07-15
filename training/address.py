@@ -46,7 +46,19 @@ class Address:
                     counter += 1
         self.address_dict = address_list
         self.ordered = True
-
+    
+    def make_randomized_order():
+       order = ('level', 'unit', 'po_box', 'house',
+                'road', 'near',  'city', 'suburb', 'city_district',
+                'state_district', 'state', 'postcode',
+                'country_region', 'country', 'lon', 'lat', 'id', 'hash')
+      
+      
+    def change_default_order(self):
+       order=make_randomized_order()
+       self.order = order
+      
+      
     def to_conll(self):
         # Description: Takes the address in the order stored and develops the CONLL
         #   representation of the address

@@ -52,11 +52,12 @@ class Address:
     @staticmethod 
     def add_delete_randomly_tags(add):
       if add is True:
-        #randomly duplicate one of tags
+        #randomly duplicate some tags
         order= tuple([GIVEN_LABELS[x] for x in range(1, random.randrange(1,15))])+GIVEN_LABELS
       else:
-        deleted_tags=[GIVEN_LABELS[x] for x in range(1, random.randrange(2,5))]
-        order = tuple([x for x in GIVEN_LABELS if x not in deleted_tags])
+        #randomly delete some tags
+        deleted_tags=[GIVEN_LABELS[x] for x in range(1, random.randrange(2,15))]
+        order = tuple([x for x in list(GIVEN_LABELS) if x not in deleted_tags])
       return order
         
       

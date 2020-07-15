@@ -3,6 +3,9 @@ import os
 import nltk
 
 from training.address import Address
+import random
+probability=0.8
+
 
 ROOT_FOLDER_NAME = '../../structured_data/openaddr-collected-global'
 OUT_FILE_NAME = '../data/CoNLL_addresses'
@@ -17,6 +20,8 @@ OA_TO_LIBPOSTAL = {'LAT': '',
                    'POSTCODE': 'postcode',
                    'ID': '',
                    'HASH': ''}
+def decision(probability):
+    return random.random() < probability
 # ///////////////////////////////////////////////////////////////////////////////////////
 #   STEP 1
 #   Owner: Archi & Ian
@@ -76,6 +81,7 @@ def get_info_from_file_name(label, file_name):
     return [{'label': label, 'value': clean_file_name}]
 
 
+  
 def read_csv(file_location, delimiter, parent_info=[]):
     # Opens a .csv file at location file_location and adds converts each line into a list of dictionaries
     out_list = []
@@ -91,7 +97,7 @@ def read_csv(file_location, delimiter, parent_info=[]):
                     line.append({'label': label, 'value': value})
             for parent in parent_info:
                 line.append(parent)
-            if random_var is True:    
+            if decision(probability) is True:    
              out_list.append(Address(line))
             else:
               out_list.append(Address(line, change_default_order(False,False))

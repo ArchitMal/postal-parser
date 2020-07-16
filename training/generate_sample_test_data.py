@@ -1,8 +1,7 @@
 import csv
 import os
 from training.address import Address
-from pyspark.sql import  *
-from pyspark.conf import SparkConf
+import pyspark as ps
 
 
 ROOT_FOLDER_NAME = '../../structured_data/testdata'
@@ -99,12 +98,17 @@ def write_csv(file_name, addresses):
         [file.write(str(address) + '\n') for address in addresses]
 
 def to_spark():
-    spark = SparkSession.builder.\
+  """
+  Reads CSV into Spark Dataframe. Can replace the location of the local file with the gcp bucket location.
+  More details can be found https://cloud.google.com/dataproc/docs/tutorials/gcs-connector-spark-tutorial
+  
+  """
+    spark = ps.sql.SparkSession.builder.\
         master('local').\
         appName('Postal Parser').\
-        config(conf=SparkConf()).\
         getOrCreate()
-    spark.read.format('csv').options(header='true').load('../data/sample_test_data.csv')
+    address_df = spark.read.csv('../data/sample_test_data.csv', header=True, inferSchema=True)
+    return address_df
 
 def main():
     dir_contents = next(os.walk(ROOT_FOLDER_NAME))
